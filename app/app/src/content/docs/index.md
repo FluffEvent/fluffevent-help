@@ -1,6 +1,6 @@
 ---
-title: Welcome
-description: Welcome to Fluff Event help website
+title: Bienvenue
+description: Bienvenue sur le site d'aide de Fluff Event
 ---
 
-Welcome to Fluff Event help website.
+Bienvenue sur le site d'aide de Fluff Event.

@@ -17,6 +17,16 @@ export default defineConfig({
 			// 		link: '/',
 			// 	},
 			// ],
+			locales: {
+				root: {
+					label: 'Français',
+					lang: 'fr',
+				},
+				en: {
+					label: 'English',
+					lang: 'en',
+				},
+			},
 			social: {
 				github: 'https://github.com/FluffEvent/help-website',
 			},
