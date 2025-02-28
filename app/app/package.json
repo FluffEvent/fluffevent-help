@@ -1,5 +1,5 @@
 {
-  "name": "astro-template",
+  "name": "fluffevent-help",
   "author": "Matiboux",
   "license": "MIT",
   "version": "0.0.1",
@@ -16,12 +16,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/matiboux/astro-template.git"
+    "url": "git+https://github.com/FluffEvent/help-website.git"
   },
   "bugs": {
-    "url": "https://github.com/matiboux/astro-template/issues"
+    "url": "https://github.com/FluffEvent/help-website/issues"
   },
-  "homepage": "https://github.com/matiboux/astro-template#readme",
+  "homepage": "https://github.com/FluffEvent/help-website#readme",
   "dependencies": {
     "@astrojs/check": "^0.9.4",
     "@iconify-json/mdi": "^1.2.3",
