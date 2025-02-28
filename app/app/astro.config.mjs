@@ -1,11 +1,39 @@
 import { defineConfig } from 'astro/config'
+import starlight from '@astrojs/starlight'
 import tailwindcss from '@tailwindcss/vite'
-
-import { i18n } from '/src/config'
 
 // https://astro.build/config
 export default defineConfig({
-	i18n: i18n,
+	integrations: [
+		starlight({
+			title: 'Fluff Event Help',
+			description: 'Help and documentation for Fluff Event',
+			editLink: {
+				baseUrl: 'https://github.com/FluffEvent/help-website/edit/main/app/app/',
+			},
+			// sidebar: [
+			// 	{
+			// 		label: 'Home',
+			// 		link: '/',
+			// 	},
+			// ],
+			social: {
+				github: 'https://github.com/FluffEvent/help-website',
+			},
+			customCss: [
+				'./src/styles/global.css',
+			],
+			lastUpdated: true,
+			pagination: false,
+			// components: {
+			// 	SiteTitle: '~/components/overrides/SiteTitle.astro',
+			// 	SocialIcons: '~/components/overrides/SocialIcons.astro',
+			// 	Sidebar: '~/components/overrides/Sidebar.astro',
+			// 	Banner: '~/components/overrides/Banner.astro',
+			// 	Footer: '~/components/overrides/Footer.astro',
+			// },
+		}),
+	],
 	vite: {
 		plugins: [
 			tailwindcss(),
