@@ -11,12 +11,6 @@ export default defineConfig({
 			editLink: {
 				baseUrl: 'https://github.com/FluffEvent/help-website/edit/main/app/app/',
 			},
-			// sidebar: [
-			// 	{
-			// 		label: 'Home',
-			// 		link: '/',
-			// 	},
-			// ],
 			locales: {
 				root: {
 					label: 'Français',
@@ -35,13 +29,6 @@ export default defineConfig({
 			],
 			lastUpdated: true,
 			pagination: false,
-			// components: {
-			// 	SiteTitle: '~/components/overrides/SiteTitle.astro',
-			// 	SocialIcons: '~/components/overrides/SocialIcons.astro',
-			// 	Sidebar: '~/components/overrides/Sidebar.astro',
-			// 	Banner: '~/components/overrides/Banner.astro',
-			// 	Footer: '~/components/overrides/Footer.astro',
-			// },
 		}),
 	],
 	vite: {
