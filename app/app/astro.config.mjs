@@ -22,6 +22,8 @@ export default defineConfig({
 				},
 			},
 			social: {
+				telegram: 'https://t.me/FluffEvent',
+				discord: 'https://discord.com/invite/rAesnJHuPe',
 				github: 'https://github.com/FluffEvent/help-website',
 			},
 			customCss: [
