@@ -31,6 +31,10 @@ export default defineConfig({
 			],
 			lastUpdated: true,
 			pagination: false,
+			components: {
+				Sidebar: '~/components/overrides/Sidebar.astro',
+			},
+			credits: true,
 		}),
 	],
 	vite: {
