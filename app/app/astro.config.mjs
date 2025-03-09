@@ -22,6 +22,8 @@ export default defineConfig({
 				},
 			},
 			social: {
+				telegram: 'https://t.me/FluffEvent',
+				discord: 'https://discord.com/invite/rAesnJHuPe',
 				github: 'https://github.com/FluffEvent/help-website',
 			},
 			customCss: [
@@ -29,6 +31,10 @@ export default defineConfig({
 			],
 			lastUpdated: true,
 			pagination: false,
+			components: {
+				Sidebar: '~/components/overrides/Sidebar.astro',
+			},
+			credits: true,
 		}),
 	],
 	vite: {
