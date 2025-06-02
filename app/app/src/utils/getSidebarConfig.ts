@@ -13,7 +13,7 @@ async function loadConfig(filePath: string): Promise<NonNullable<StarlightUserCo
 {
 	if (fs.existsSync(filePath))
 	{
-		const config = await import(filePath)
+		const config = await import(/* @vite-ignore */ filePath)
 		return config.default
 	}
 
@@ -55,8 +55,9 @@ async function formatCollectionEntry(
 	userLocale: string
 ): Promise<SidebarEntry>
 {
-	const label = collectionEntry.data.title
-	const href = getRelativeLocaleUrl(userLocale, collectionEntry.id)
+	const slug = collectionEntry.id.replace(/^\/?index$/, '')
+	const label = collectionEntry.data.title || slug
+	const href = getRelativeLocaleUrl(userLocale, slug)
 
 	const normalizePath = (p: string) => p === '/' ? '/' : p.replace(/\/+$/, '')
 	const isCurrent = normalizePath(userUrl.pathname) === normalizePath(href)
@@ -65,7 +66,7 @@ async function formatCollectionEntry(
 	return item && typeof item !== 'string'
 		? {
 			type: 'link',
-			label: label || item.label || collectionEntry.id,
+			label: item.label || label,
 			href: href,
 			isCurrent: isCurrent,
 			badge: formatBadge(item.badge),
@@ -73,7 +74,7 @@ async function formatCollectionEntry(
 		}
 		: {
 			type: 'link',
-			label: label || collectionEntry.id,
+			label: label,
 			href: href,
 			isCurrent: isCurrent,
 			badge: undefined,
@@ -81,23 +82,43 @@ async function formatCollectionEntry(
 		}
 }
 
-async function formatSidebarItem(item: SidebarConfigItem, userUrl: URL, userLocale: string): Promise<SidebarEntry>
+async function formatSidebarItem(item: SidebarConfigItem, slugPath: string, userUrl: URL, userLocale: string): Promise<SidebarEntry>
 {
 	if (typeof item === 'string' || 'slug' in item)
 	{
 		// String item: <SidebarLinkItemSchema>
 		// or Internal link item: <InternalSidebarLinkItemSchema>
 
-		// Load collection entry by slug
-		const slug = typeof item === 'string' ? item : item.slug
-		const collectionEntry = await getEntry('docs', slug)
+		let slug = typeof item === 'string' ? item : item.slug
+		let collectionEntry: DataEntryMap['docs'][string] | undefined = undefined
+
+		if (slug !== '::back')
+		{
+			// Load collection entry by slug
+			collectionEntry = await getEntry('docs', slug)
+		}
+		else
+		{
+			slug = slugPath
+			while (!collectionEntry && slug !== 'index')
+			{
+				console.log(slug)
+				// Remove trailing slug segment
+				// If slug is empty, fallback to 'index' for home page
+				slug = slug.replace(/\/?[^/]+$/, '') || 'index'
+
+				// Try to load the collection entry for this slug
+				collectionEntry = await getEntry('docs', slug)
+			}
+		}
+
 
 		if (collectionEntry)
 		{
 			return formatCollectionEntry(item, collectionEntry, userUrl, userLocale)
 		}
 
-		throw new Error(`Collection entry not found for slug: ${slug}`)
+		throw new Error(`Collection entry not found for slug '${slug}'`)
 	}
 
 	if ('link' in item)
@@ -148,7 +169,7 @@ async function formatSidebarItem(item: SidebarConfigItem, userUrl: URL, userLoca
 			label: item.label,
 			collapsed: item.collapsed ?? false,
 			badge: formatBadge(item.badge),
-			entries: await Promise.all(item.items.map(item => formatSidebarItem(item, userUrl, userLocale))), // Recursively format items
+			entries: await Promise.all(item.items.map(item => formatSidebarItem(item, slugPath, userUrl, userLocale))), // Recursively format items
 		}
 	}
 
@@ -157,12 +178,14 @@ async function formatSidebarItem(item: SidebarConfigItem, userUrl: URL, userLoca
 
 export async function getSidebarConfig(slugPath: string, userUrl: URL, userLocale: string): Promise<SidebarEntry[]>
 {
+	// slugPath may be empty for the root path (home page)
 	const segments = slugPath.split('/').filter(Boolean)
 
 	let sidebarConfig = undefined
 	for (let i = segments.length; i >= 0; i--)
 	{
-		const file = path.join(ROOT, ...segments.slice(0, i), 'sidebar.config.ts')
+		const slugSegment = segments.slice(0, i).join('/')
+		const file = path.join(ROOT, slugSegment, 'sidebar.config.ts')
 		const config = await loadConfig(file)
 		if (config)
 		{
@@ -176,5 +199,5 @@ export async function getSidebarConfig(slugPath: string, userUrl: URL, userLocal
 		throw new Error(`Sidebar config not found for path: ${slugPath}`)
 	}
 
-	return Promise.all(sidebarConfig.map(item => formatSidebarItem(item, userUrl, userLocale)))
+	return Promise.all(sidebarConfig.map(item => formatSidebarItem(item, slugPath, userUrl, userLocale)))
 }
