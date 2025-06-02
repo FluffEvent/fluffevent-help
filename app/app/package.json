@@ -16,12 +16,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FluffEvent/help-website.git"
+    "url": "git+https://github.com/FluffEvent/fluffevent-help.git"
   },
   "bugs": {
-    "url": "https://github.com/FluffEvent/help-website/issues"
+    "url": "https://github.com/FluffEvent/fluffevent-help/issues"
   },
-  "homepage": "https://github.com/FluffEvent/help-website#readme",
+  "homepage": "https://github.com/FluffEvent/fluffevent-help#readme",
   "dependencies": {
     "@astrojs/check": "^0.9.4",
     "@astrojs/starlight": "^0.34.3",
