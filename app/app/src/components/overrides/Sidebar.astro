@@ -6,7 +6,7 @@ import SidebarSublist from '@astrojs/starlight/components/SidebarSublist.astro'
 import Copyright from '~/components/Copyright.astro'
 import { getSidebarConfig } from '~/utils/getSidebarConfig'
 
-const slug = Astro.url.pathname.replace(/^\//, '')
+const slug = Astro.params.slug || ''
 const sidebar = await getSidebarConfig(slug, Astro.url, Astro.currentLocale || 'root')
 ---
 
