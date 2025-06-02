@@ -1,15 +1,29 @@
 ---
-import StarlightSidebar from '@astrojs/starlight/components/Sidebar.astro'
+import MobileMenuFooter from 'virtual:starlight/components/MobileMenuFooter'
+import SidebarPersister from '@astrojs/starlight/components/SidebarPersister.astro'
+import SidebarSublist from '@astrojs/starlight/components/SidebarSublist.astro'
 
 import Copyright from '~/components/Copyright.astro'
+import { getSidebarConfig } from '~/utils/getSidebarConfig'
+
+const slug = Astro.url.pathname.replace(/^\//, '')
+const sidebar = await getSidebarConfig(slug, Astro.url, Astro.currentLocale || 'root')
 ---
 
 <div class="sidebar-wrapper">
-	<StarlightSidebar {...(Astro.props as any)} />
+
+	<SidebarPersister>
+		<SidebarSublist sublist={sidebar} />
+	</SidebarPersister>
+
+	<div class="md:sl-hidden">
+		<MobileMenuFooter />
+	</div>
 
 	<div class="md:mt-4">
 		<Copyright shortText={true} />
 	</div>
+
 </div>
 
 <style>
