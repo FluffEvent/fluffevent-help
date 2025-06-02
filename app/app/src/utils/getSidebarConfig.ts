@@ -193,6 +193,9 @@ export async function getSidebarConfig(
 		slugPath = slugPath.slice(userLocale.length + 1)
 	}
 
+	// Remove trailing index segment if present
+	slugPath = slugPath.replace(/\/?index$/, '')
+
 	// slugPath may be empty for the root path (home page)
 	const segments = slugPath.split('/').filter(Boolean)
 
