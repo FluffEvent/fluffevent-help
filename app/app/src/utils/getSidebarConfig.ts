@@ -181,8 +181,18 @@ async function formatSidebarItem(item: SidebarConfigItem, context: Context): Pro
 	throw new Error(`Unsupported sidebar config item: ${JSON.stringify(item)}`)
 }
 
-export async function getSidebarConfig(slugPath: string, userUrl: URL, userLocale: string): Promise<SidebarEntry[]>
+export async function getSidebarConfig(
+	slugPath: string,
+	userUrl: URL,
+	userLocale: string,
+): Promise<SidebarEntry[]>
 {
+	// Remove leading language prefix if present
+	if (userLocale && slugPath.startsWith(`${userLocale}/`))
+	{
+		slugPath = slugPath.slice(userLocale.length + 1)
+	}
+
 	// slugPath may be empty for the root path (home page)
 	const segments = slugPath.split('/').filter(Boolean)
 
