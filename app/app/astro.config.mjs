@@ -21,11 +21,11 @@ export default defineConfig({
 					lang: 'en',
 				},
 			},
-			social: {
-				telegram: 'https://t.me/FluffEvent',
-				discord: 'https://discord.com/invite/rAesnJHuPe',
-				github: 'https://github.com/FluffEvent/help-website',
-			},
+			social: [
+				{ icon: 'telegram', label: 'Telegram', href: 'https://t.me/FluffEvent' },
+				{ icon: 'discord', label: 'Discord', href: 'https://discord.com/invite/rAesnJHuPe' },
+				{ icon: 'github', label: 'GitHub', href: 'https://github.com/FluffEvent/help-website' },
+			],
 			customCss: [
 				'./src/styles/global.css',
 			],
