@@ -72,7 +72,7 @@ async function formatCollectionEntry(
 	return item && typeof item !== 'string'
 		? {
 			type: 'link',
-			label: item.label || label,
+			label: item.translations?.[context.userLocale] || item.label || label,
 			href: href,
 			isCurrent: isCurrent,
 			badge: formatBadge(item.badge),
@@ -133,7 +133,7 @@ async function formatSidebarItem(item: SidebarConfigItem, context: Context): Pro
 		// TODO: Handle `translations` property
 		return {
 			type: 'link',
-			label: item.label,
+			label: item.translations?.[context.userLocale] || item.label,
 			href: item.link,
 			isCurrent: false,
 			badge: formatBadge(item.badge),
@@ -158,7 +158,7 @@ async function formatSidebarItem(item: SidebarConfigItem, context: Context): Pro
 
 		return {
 			type: 'group',
-			label: item.label,
+			label: item.translations?.[context.userLocale] || item.label,
 			collapsed: item.autogenerate.collapsed ?? false,
 			badge: formatBadge(item.badge),
 			entries: await Promise.all(collectionEntries.map(entry => formatCollectionEntry(null, entry, context))), // Recursively format entries
@@ -171,7 +171,7 @@ async function formatSidebarItem(item: SidebarConfigItem, context: Context): Pro
 		// <ManualSidebarGroupSchema>
 		return {
 			type: 'group',
-			label: item.label,
+			label: item.translations?.[context.userLocale] || item.label,
 			collapsed: item.collapsed ?? false,
 			badge: formatBadge(item.badge),
 			entries: await Promise.all(item.items.map(item => formatSidebarItem(item, context))), // Recursively format items
