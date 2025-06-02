@@ -7,7 +7,7 @@ import type { SidebarEntry } from '@astrojs/starlight/utils/routing/types'
 import type { StarlightUserConfig } from '@astrojs/starlight/types'
 import type { DataEntryMap } from 'astro:content'
 
-const ROOT = path.resolve('./src/content/docs')
+const DOCS_ROOT = path.resolve('./src/content/docs')
 
 type Context = {
 	sidebarConfigSlug: string,
@@ -15,6 +15,11 @@ type Context = {
 	userUrl: URL,
 	userLocale: string
 }
+
+type SidebarConfigItem = NonNullable<StarlightUserConfig['sidebar']>[number]
+type SidebarConfigItemBadge = Extract<SidebarConfigItem, { badge?: unknown }>['badge']
+
+type SidebarEntryBadge = SidebarEntry['badge']
 
 async function loadConfig(filePath: string): Promise<NonNullable<StarlightUserConfig['sidebar']> | null>
 {
@@ -26,11 +31,6 @@ async function loadConfig(filePath: string): Promise<NonNullable<StarlightUserCo
 
 	return null
 }
-
-type SidebarConfigItem = NonNullable<StarlightUserConfig['sidebar']>[number]
-type SidebarConfigItemBadge = Extract<SidebarConfigItem, { badge?: unknown }>['badge']
-
-type SidebarEntryBadge = SidebarEntry['badge']
 
 function formatBadge(badge: SidebarConfigItemBadge): SidebarEntryBadge
 {
@@ -198,10 +198,10 @@ export async function getSidebarConfig(
 
 	let sidebarConfig = undefined
 	let sidebarConfigSlug = undefined
-	for (let i = segments.length; i >= 0; i--)
+	for (let i = segments.length; i >= 0; --i)
 	{
 		const slugSegment = segments.slice(0, i).join('/')
-		const file = path.join(ROOT, slugSegment, 'sidebar.config.ts')
+		const file = path.join(DOCS_ROOT, slugSegment, 'sidebar.config.ts')
 		const config = await loadConfig(file)
 		if (config)
 		{
