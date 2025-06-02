@@ -1,6 +1,8 @@
 import fs from 'node:fs'
 import path from 'node:path'
 
+import { getEntry } from 'astro:content'
+import { getRelativeLocaleUrl } from 'astro:i18n'
 import type { SidebarEntry } from '@astrojs/starlight/utils/routing/types'
 import type { StarlightUserConfig } from '@astrojs/starlight/types'
 
@@ -45,35 +47,55 @@ function formatBadge(badge: SidebarConfigItemBadge): SidebarEntryBadge
 	}
 }
 
-function formatSidebarItem(item: SidebarConfigItem): SidebarEntry
+async function formatSidebarItem(item: SidebarConfigItem, userUrl: URL, userLocale: string): Promise<SidebarEntry>
 {
 	if (typeof item === 'string' || 'slug' in item)
 	{
 		// String item: <SidebarLinkItemSchema>
 		// or Internal link item: <InternalSidebarLinkItemSchema>
 
-		// TODO: Handle `translations` property
-		const entry: SidebarEntry = typeof item !== 'string'
-			? {
-				type: 'link',
-				label: item.label ?? item.slug, // FIXME
-				href: item.slug,
-				isCurrent: false,
-				badge: formatBadge(item.badge),
-				attrs: item.attrs ?? {},
-			}
-			: {
-				type: 'link',
-				label: item,
-				href: item,
-				isCurrent: false,
-				badge: undefined,
-				attrs: {},
-			}
+		// Load collection entry by slug
+		const slug = typeof item === 'string' ? item : item.slug
+		const collectionEntry = await getEntry('docs', slug)
 
-		// TODO: Load slug and information from the content collection
+		if (collectionEntry)
+		{
+			// collectionEntry.data should contain:
+			// - title: string
+			// - editUrl: boolean
+			// - head: Array
+			// - template: string
+			// - sidebar: { hidden: boolean, attrs: Record }
+			// - pagefind: boolean
+			// - draft: boolean
 
-		return entry
+			const label = collectionEntry.data?.title as string | undefined
+			const href = getRelativeLocaleUrl(userLocale, slug)
+
+			const normalizePath = (p: string) => p === '/' ? '/' : p.replace(/\/+$/, '')
+			const isCurrent = normalizePath(userUrl.pathname) === normalizePath(href)
+
+			// TODO: Handle `translations` property
+			return typeof item !== 'string'
+				? {
+					type: 'link',
+					label: label || item.label || slug,
+					href: href,
+					isCurrent: isCurrent,
+					badge: formatBadge(item.badge),
+					attrs: item.attrs ?? {},
+				}
+				: {
+					type: 'link',
+					label: label || slug,
+					href: href,
+					isCurrent: isCurrent,
+					badge: undefined,
+					attrs: {},
+				}
+		}
+
+		throw new Error(`Collection entry not found for slug: ${slug}`)
 	}
 
 	if ('link' in item)
@@ -113,14 +135,14 @@ function formatSidebarItem(item: SidebarConfigItem): SidebarEntry
 			label: item.label,
 			collapsed: item.collapsed ?? false,
 			badge: formatBadge(item.badge),
-			entries: item.items.map(formatSidebarItem), // Recursively format items
+			entries: await Promise.all(item.items.map(item => formatSidebarItem(item, userUrl, userLocale))), // Recursively format items
 		}
 	}
 
 	throw new Error(`Unsupported sidebar config item: ${JSON.stringify(item)}`)
 }
 
-export async function getSidebarConfig(slugPath: string): Promise<SidebarEntry[]>
+export async function getSidebarConfig(slugPath: string, userUrl: URL, userLocale: string): Promise<SidebarEntry[]>
 {
 	const segments = slugPath.split('/').filter(Boolean)
 	const pathsToCheck = []
@@ -136,5 +158,5 @@ export async function getSidebarConfig(slugPath: string): Promise<SidebarEntry[]
 	const configs = (await Promise.all(pathsToCheck.map(loadConfig))).flat()
 	// or do deep merge if needed
 
-	return configs.map((entry): SidebarEntry => formatSidebarItem(entry))
+	return Promise.all(configs.map(item => formatSidebarItem(item, userUrl, userLocale)))
 }
