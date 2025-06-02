@@ -9,7 +9,7 @@ import type { DataEntryMap } from 'astro:content'
 
 const ROOT = path.resolve('./src/content/docs')
 
-async function loadConfig(filePath: string): Promise<NonNullable<StarlightUserConfig['sidebar']>>
+async function loadConfig(filePath: string): Promise<NonNullable<StarlightUserConfig['sidebar']> | null>
 {
 	if (fs.existsSync(filePath))
 	{
@@ -17,7 +17,7 @@ async function loadConfig(filePath: string): Promise<NonNullable<StarlightUserCo
 		return config.default
 	}
 
-	return []
+	return null
 }
 
 type SidebarConfigItem = NonNullable<StarlightUserConfig['sidebar']>[number]
@@ -158,18 +158,24 @@ async function formatSidebarItem(item: SidebarConfigItem, userUrl: URL, userLoca
 export async function getSidebarConfig(slugPath: string, userUrl: URL, userLocale: string): Promise<SidebarEntry[]>
 {
 	const segments = slugPath.split('/').filter(Boolean)
-	const pathsToCheck = []
 
-	// Build paths from base to leaf
-	for (let i = 0; i <= segments.length; i++)
+	let sidebarConfig = undefined
+	for (let i = segments.length; i >= 0; i--)
 	{
-		const dir = path.join(ROOT, ...segments.slice(0, i))
-		pathsToCheck.push(path.join(dir, 'sidebar.config.ts'))
+		const file = path.join(ROOT, ...segments.slice(0, i), 'sidebar.config.ts')
+		console.log(`Loading sidebar config from: ${slugPath} ${file}`)
+		const config = await loadConfig(file)
+		if (config)
+		{
+			sidebarConfig = config
+			break
+		}
 	}
 
-	// Load and merge sidebar configs
-	const configs = (await Promise.all(pathsToCheck.map(loadConfig))).flat()
-	// or do deep merge if needed
+	if (!sidebarConfig)
+	{
+		throw new Error(`Sidebar config not found for path: ${slugPath}`)
+	}
 
-	return Promise.all(configs.map(item => formatSidebarItem(item, userUrl, userLocale)))
+	return Promise.all(sidebarConfig.map(item => formatSidebarItem(item, userUrl, userLocale)))
 }
