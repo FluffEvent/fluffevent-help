@@ -163,7 +163,6 @@ export async function getSidebarConfig(slugPath: string, userUrl: URL, userLocal
 	for (let i = segments.length; i >= 0; i--)
 	{
 		const file = path.join(ROOT, ...segments.slice(0, i), 'sidebar.config.ts')
-		console.log(`Loading sidebar config from: ${slugPath} ${file}`)
 		const config = await loadConfig(file)
 		if (config)
 		{
