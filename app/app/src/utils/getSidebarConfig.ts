@@ -9,6 +9,13 @@ import type { DataEntryMap } from 'astro:content'
 
 const ROOT = path.resolve('./src/content/docs')
 
+type Context = {
+	sidebarConfigSlug: string,
+	slugPath: string,
+	userUrl: URL,
+	userLocale: string
+}
+
 async function loadConfig(filePath: string): Promise<NonNullable<StarlightUserConfig['sidebar']> | null>
 {
 	if (fs.existsSync(filePath))
@@ -51,16 +58,15 @@ function formatBadge(badge: SidebarConfigItemBadge): SidebarEntryBadge
 async function formatCollectionEntry(
 	item: Extract<SidebarConfigItem, string | { slug?: unknown }> | null,
 	collectionEntry: DataEntryMap['docs'][string],
-	userUrl: URL,
-	userLocale: string
+	context: Context
 ): Promise<SidebarEntry>
 {
 	const slug = collectionEntry.id.replace(/^\/?index$/, '')
 	const label = collectionEntry.data.title || slug
-	const href = getRelativeLocaleUrl(userLocale, slug)
+	const href = getRelativeLocaleUrl(context.userLocale, slug)
 
 	const normalizePath = (p: string) => p === '/' ? '/' : p.replace(/\/+$/, '')
-	const isCurrent = normalizePath(userUrl.pathname) === normalizePath(href)
+	const isCurrent = normalizePath(context.userUrl.pathname) === normalizePath(href)
 
 	// TODO: Handle `translations` property
 	return item && typeof item !== 'string'
@@ -82,7 +88,7 @@ async function formatCollectionEntry(
 		}
 }
 
-async function formatSidebarItem(item: SidebarConfigItem, slugPath: string, userUrl: URL, userLocale: string): Promise<SidebarEntry>
+async function formatSidebarItem(item: SidebarConfigItem, context: Context): Promise<SidebarEntry>
 {
 	if (typeof item === 'string' || 'slug' in item)
 	{
@@ -99,7 +105,7 @@ async function formatSidebarItem(item: SidebarConfigItem, slugPath: string, user
 		}
 		else
 		{
-			slug = slugPath
+			slug = context.sidebarConfigSlug
 			while (!collectionEntry && slug !== 'index')
 			{
 				console.log(slug)
@@ -115,7 +121,7 @@ async function formatSidebarItem(item: SidebarConfigItem, slugPath: string, user
 
 		if (collectionEntry)
 		{
-			return formatCollectionEntry(item, collectionEntry, userUrl, userLocale)
+			return formatCollectionEntry(item, collectionEntry, context)
 		}
 
 		throw new Error(`Collection entry not found for slug '${slug}'`)
@@ -156,7 +162,7 @@ async function formatSidebarItem(item: SidebarConfigItem, slugPath: string, user
 			label: item.label,
 			collapsed: item.autogenerate.collapsed ?? false,
 			badge: formatBadge(item.badge),
-			entries: await Promise.all(collectionEntries.map(entry => formatCollectionEntry(null, entry, userUrl, userLocale))), // Recursively format entries
+			entries: await Promise.all(collectionEntries.map(entry => formatCollectionEntry(null, entry, context))), // Recursively format entries
 		}
 	}
 
@@ -169,7 +175,7 @@ async function formatSidebarItem(item: SidebarConfigItem, slugPath: string, user
 			label: item.label,
 			collapsed: item.collapsed ?? false,
 			badge: formatBadge(item.badge),
-			entries: await Promise.all(item.items.map(item => formatSidebarItem(item, slugPath, userUrl, userLocale))), // Recursively format items
+			entries: await Promise.all(item.items.map(item => formatSidebarItem(item, context))), // Recursively format items
 		}
 	}
 
@@ -182,6 +188,7 @@ export async function getSidebarConfig(slugPath: string, userUrl: URL, userLocal
 	const segments = slugPath.split('/').filter(Boolean)
 
 	let sidebarConfig = undefined
+	let sidebarConfigSlug = undefined
 	for (let i = segments.length; i >= 0; i--)
 	{
 		const slugSegment = segments.slice(0, i).join('/')
@@ -190,6 +197,7 @@ export async function getSidebarConfig(slugPath: string, userUrl: URL, userLocal
 		if (config)
 		{
 			sidebarConfig = config
+			sidebarConfigSlug = slugSegment
 			break
 		}
 	}
@@ -199,5 +207,17 @@ export async function getSidebarConfig(slugPath: string, userUrl: URL, userLocal
 		throw new Error(`Sidebar config not found for path: ${slugPath}`)
 	}
 
-	return Promise.all(sidebarConfig.map(item => formatSidebarItem(item, slugPath, userUrl, userLocale)))
+	return Promise.all(
+		sidebarConfig.map(
+			item => formatSidebarItem(
+				item,
+				{
+					sidebarConfigSlug: sidebarConfigSlug!,
+					slugPath,
+					userUrl,
+					userLocale
+				}
+			)
+		)
+	)
 }
