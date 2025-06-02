@@ -108,7 +108,6 @@ async function formatSidebarItem(item: SidebarConfigItem, context: Context): Pro
 			slug = context.sidebarConfigSlug
 			while (!collectionEntry && slug !== 'index')
 			{
-				console.log(slug)
 				// Remove trailing slug segment
 				// If slug is empty, fallback to 'index' for home page
 				slug = slug.replace(/\/?[^/]+$/, '') || 'index'
