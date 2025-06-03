@@ -1,6 +1,5 @@
-import type { StarlightUserConfig } from '@astrojs/starlight/types'
-
-const sidebar: NonNullable<StarlightUserConfig['sidebar']> = [
+/** @type {import('@astrojs/starlight/types').StarlightUserConfig} */
+const sidebar = [
 	{
 		label: '⬅️ Retour à l’accueil',
 		translations: {
