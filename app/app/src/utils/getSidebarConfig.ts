@@ -7,7 +7,7 @@ import type { SidebarEntry } from '@astrojs/starlight/utils/routing/types'
 import type { StarlightUserConfig } from '@astrojs/starlight/types'
 import type { DataEntryMap } from 'astro:content'
 
-const DOCS_ROOT = path.resolve('./src/content/docs')
+const SIDEBAR_CONFIG_ROOT = path.resolve('./src/content/docs')
 
 type Context = {
 	sidebarConfigSlug: string,
@@ -277,7 +277,7 @@ export async function getSidebarConfig(
 	for (let i = slugSegments.length; i >= 0; --i)
 	{
 		const slugSegment = slugSegments.slice(0, i).join('/')
-		const file = path.join(DOCS_ROOT, slugSegment, 'sidebar.config.ts')
+		const file = path.join(SIDEBAR_CONFIG_ROOT, slugSegment, 'sidebar.config.mjs')
 		const config = await loadConfig(file)
 		if (config)
 		{
@@ -289,7 +289,7 @@ export async function getSidebarConfig(
 
 	if (!sidebarConfig)
 	{
-		throw new Error(`Sidebar config not found for path: ${slugPath}`)
+		throw new Error(`Sidebar config not found for path '${slugPath}'`)
 	}
 
 	return Promise.all(
