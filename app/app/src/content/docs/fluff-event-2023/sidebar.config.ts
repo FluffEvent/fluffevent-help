@@ -2,7 +2,10 @@ import type { StarlightUserConfig } from '@astrojs/starlight/types'
 
 const sidebar: NonNullable<StarlightUserConfig['sidebar']> = [
 	{
-		label: '⬅️ Back to home page',
+		label: '⬅️ Retour à l’accueil',
+		translations: {
+			en: '⬅️ Back to home page',
+		},
 		slug: '::back',
 	},
 	{

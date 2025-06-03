@@ -9,7 +9,10 @@ const sidebar: NonNullable<StarlightUserConfig['sidebar']> = [
 		},
 	},
 	{
-		label: 'Home',
+		label: 'Accueil',
+		translations: {
+			en: 'Home',
+		},
 		slug: 'index',
 	},
 	{
