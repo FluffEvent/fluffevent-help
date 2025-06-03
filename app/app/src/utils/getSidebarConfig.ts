@@ -62,7 +62,8 @@ async function formatCollectionEntry(
 ): Promise<Extract<SidebarEntry, { type: 'link' }>>
 {
 	const slug = typeof collectionEntry === 'string' ? collectionEntry : collectionEntry.id.replace(/^\/?index$/, '')
-	const label = typeof collectionEntry === 'string' ? collectionEntry : collectionEntry.data.title || slug
+	const slugLastSegment = slug.split('/').pop() || 'index'
+	const label = typeof collectionEntry === 'string' ? collectionEntry : collectionEntry.data.title || slugLastSegment
 	const href = getRelativeLocaleUrl(context.userLocale, slug)
 
 	const normalizePath = (p: string) => p === '/' ? '/' : p.replace(/\/+$/, '')
@@ -114,8 +115,8 @@ async function formatAutoGroupEntry(
 		// Return a group entry
 		return {
 			type: 'group',
-			label: collectionGroupKey,
-			collapsed: false, // TODO: Make this configurable
+			label: linkEntry?.label || collectionGroupKey.split('/').pop() || 'index',
+			collapsed: true, // TODO: Make this configurable
 			badge: undefined,
 			entries: (await Promise.all(Array.from(collectionGroups[collectionGroupKey]).map(
 				slug => slug === collectionGroupKey
@@ -132,8 +133,8 @@ async function formatAutoGroupEntry(
 
 	return {
 		type: 'group',
-		label: collectionGroupKey,
-		collapsed: false, // TODO: Make this configurable
+		label: collectionGroupKey.split('/').pop() || 'index',
+		collapsed: true, // TODO: Make this configurable
 		badge: undefined,
 		entries: await Promise.all(Array.from(collectionGroups[collectionGroupKey]).map(
 			slug => formatAutoGroupEntry(collectionEntries, collectionGroups, slug, context)
@@ -208,7 +209,7 @@ async function formatSidebarItem(item: SidebarConfigItem, context: Context): Pro
 			)).map(entry => [entry.id, entry])
 		)
 
-		const nbPrefixSegments = item.autogenerate.directory.split('/').length
+		const nbPrefixSegments = item.autogenerate.directory.split('/').length + 1
 
 		const collectionGroups: Record<string, Set<string>> = {}
 		for (const collectionEntry of Object.values(collectionEntries))
@@ -232,7 +233,7 @@ async function formatSidebarItem(item: SidebarConfigItem, context: Context): Pro
 		return formatAutoGroupEntry(
 			collectionEntries,
 			collectionGroups,
-			'',
+			item.autogenerate.directory,
 			context
 		)
 	}
