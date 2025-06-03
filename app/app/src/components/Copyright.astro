@@ -1,15 +1,19 @@
 ---
+import { Icon } from '@astrojs/starlight/components'
+
 const { shortText } = Astro.props
 ---
 
 <div class="copyright-notice">
 	<ul>
-		<li>
-			<span class="icon icon-[mdi--star-outline]" />
-			Built with
-			<a href="https://starlight.astro.build/" target="_blank">
-				Starlight
-			</a>
+		<li class="kudos">
+			<Icon name={'starlight'} />
+			<span>
+				Built with
+				<a href="https://starlight.astro.build/" target="_blank">
+					Starlight
+				</a>
+			</span>
 		</li>
 	</ul>
 </div>
@@ -66,6 +70,18 @@ const { shortText } = Astro.props
 
 	&::before {
 		background-color: var(--sl-color-gray-6);
+	}
+}
+
+.kudos {
+	display: flex;
+	align-items: center;
+	gap: 0.5em;
+}
+
+@layer starlight.components {
+	.kudos :global(svg) {
+		color: var(--sl-color-orange);
 	}
 }
 </style>
