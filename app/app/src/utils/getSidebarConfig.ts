@@ -57,12 +57,12 @@ function formatBadge(badge: SidebarConfigItemBadge): SidebarEntryBadge
 
 async function formatCollectionEntry(
 	item: Extract<SidebarConfigItem, string | { slug?: unknown }> | null,
-	collectionEntry: DataEntryMap['docs'][string],
+	collectionEntry: DataEntryMap['docs'][string] | string,
 	context: Context
-): Promise<SidebarEntry>
+): Promise<Extract<SidebarEntry, { type: 'link' }>>
 {
-	const slug = collectionEntry.id.replace(/^\/?index$/, '')
-	const label = collectionEntry.data.title || slug
+	const slug = typeof collectionEntry === 'string' ? collectionEntry : collectionEntry.id.replace(/^\/?index$/, '')
+	const label = typeof collectionEntry === 'string' ? collectionEntry : collectionEntry.data.title || slug
 	const href = getRelativeLocaleUrl(context.userLocale, slug)
 
 	const normalizePath = (p: string) => p === '/' ? '/' : p.replace(/\/+$/, '')
@@ -86,6 +86,59 @@ async function formatCollectionEntry(
 			badge: undefined,
 			attrs: {},
 		}
+}
+
+async function formatAutoGroupEntry(
+	collectionEntries: Record<string, DataEntryMap['docs'][string]>,
+	collectionGroups: Record<string, Set<string>>,
+	collectionGroupKey: string,
+	context: Context
+): Promise<SidebarEntry>
+{
+	if (!collectionGroups[collectionGroupKey])
+	{
+		throw new Error(`Collection group not found for key '${collectionGroupKey}'`)
+	}
+
+	const collectionEntry = collectionEntries[collectionGroupKey]
+
+	let linkEntry = undefined
+	if (collectionGroups[collectionGroupKey].has(collectionGroupKey))
+	{
+		// Generate a link entry for the group key
+		linkEntry = await formatCollectionEntry(null, collectionEntry || collectionGroupKey, context)
+	}
+
+	if (collectionGroups[collectionGroupKey].size > 1)
+	{
+		// Return a group entry
+		return {
+			type: 'group',
+			label: collectionGroupKey,
+			collapsed: false, // TODO: Make this configurable
+			badge: undefined,
+			entries: (await Promise.all(Array.from(collectionGroups[collectionGroupKey]).map(
+				slug => slug === collectionGroupKey
+					? Promise.resolve(linkEntry!)
+					: formatAutoGroupEntry(collectionEntries, collectionGroups, slug, context)
+			))),
+		}
+	}
+
+	if (linkEntry)
+	{
+		return linkEntry
+	}
+
+	return {
+		type: 'group',
+		label: collectionGroupKey,
+		collapsed: false, // TODO: Make this configurable
+		badge: undefined,
+		entries: await Promise.all(Array.from(collectionGroups[collectionGroupKey]).map(
+			slug => formatAutoGroupEntry(collectionEntries, collectionGroups, slug, context)
+		)),
+	}
 }
 
 async function formatSidebarItem(item: SidebarConfigItem, context: Context): Promise<SidebarEntry>
@@ -147,22 +200,41 @@ async function formatSidebarItem(item: SidebarConfigItem, context: Context): Pro
 		// <AutoSidebarGroupSchema>
 
 		// List collection entries in the directory
-		const collectionEntries = await getCollection(
-			'docs',
-			entry =>
-			{
-				// Filter entries by directory
-				return entry.id.startsWith(item.autogenerate.directory) // FIXME: maybe use && !entry.data.sidebar?.hidden
-			},
+		const collectionEntries = Object.fromEntries(
+			(await getCollection(
+				'docs',
+				// Filter entries by directory (FIXME: maybe use && !entry.data.sidebar?.hidden)
+				entry => entry.id.startsWith(item.autogenerate.directory)
+			)).map(entry => [entry.id, entry])
 		)
 
-		return {
-			type: 'group',
-			label: item.translations?.[context.userLocale] || item.label,
-			collapsed: item.autogenerate.collapsed ?? false,
-			badge: formatBadge(item.badge),
-			entries: await Promise.all(collectionEntries.map(entry => formatCollectionEntry(null, entry, context))), // Recursively format entries
+		const nbPrefixSegments = item.autogenerate.directory.split('/').length
+
+		const collectionGroups: Record<string, Set<string>> = {}
+		for (const collectionEntry of Object.values(collectionEntries))
+		{
+			const collectionEntryId = collectionEntry.id
+			const slugSegments = collectionEntry.id.split('/').filter(Boolean)
+
+			collectionGroups[collectionEntryId] = collectionGroups[collectionEntryId] || new Set()
+			collectionGroups[collectionEntryId].add(collectionEntryId)
+
+			for (let i = nbPrefixSegments; i <= slugSegments.length; ++i)
+			{
+				// Create nested groups for each segment
+				const groupKey = slugSegments.slice(0, i - 1).join('/')
+				const value = slugSegments.slice(0, i).join('/')
+				collectionGroups[groupKey] = collectionGroups[groupKey] || new Set()
+				collectionGroups[groupKey].add(value)
+			}
 		}
+
+		return formatAutoGroupEntry(
+			collectionEntries,
+			collectionGroups,
+			'',
+			context
+		)
 	}
 
 	if ('items' in item)
@@ -197,13 +269,13 @@ export async function getSidebarConfig(
 	slugPath = slugPath.replace(/\/?index$/, '')
 
 	// slugPath may be empty for the root path (home page)
-	const segments = slugPath.split('/').filter(Boolean)
+	const slugSegments = slugPath.split('/').filter(Boolean)
 
 	let sidebarConfig = undefined
 	let sidebarConfigSlug = undefined
-	for (let i = segments.length; i >= 0; --i)
+	for (let i = slugSegments.length; i >= 0; --i)
 	{
-		const slugSegment = segments.slice(0, i).join('/')
+		const slugSegment = slugSegments.slice(0, i).join('/')
 		const file = path.join(DOCS_ROOT, slugSegment, 'sidebar.config.ts')
 		const config = await loadConfig(file)
 		if (config)
