@@ -1,5 +1,5 @@
 ---
-title: FAQ Fluff Event 2023
+title: FAQ Fluff Event 2024
 ---
 
 <details>
