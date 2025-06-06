@@ -1,9 +1,10 @@
 ---
 import YAML from 'yaml'
 
-import streamersYml from '~/data/streamers/2023.yml?raw'
+import streamersListYml from '~/data/streamers/2023.yml?raw'
+import streamersSocialsYml from '~/data/streamers/socials.yml?raw'
 
-interface Streamer {
+interface StreamerSocials {
 	name: string
 	country: string
 	socials: Array<{
@@ -12,8 +13,12 @@ interface Streamer {
 	}>
 }
 
-const streamers = YAML.parse(streamersYml) as Array<Streamer>
-streamers.sort((a, b) => a.name.localeCompare(b.name, 'fr', { sensitivity: 'base' }))
+const streamersList = YAML.parse(streamersListYml) as Array<string>
+const streamersSocials = YAML.parse(streamersSocialsYml) as Record<string, StreamerSocials>
+
+const streamers: Array<StreamerSocials> = streamersList.map(
+	(name) => streamersSocials[name] || { name, country: '?', socials: [] }
+)
 
 const countryFlag: Record<string, string> = {
 	'AUS': 'australia',
