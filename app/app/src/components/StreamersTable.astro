@@ -13,6 +13,7 @@ interface Streamer {
 }
 
 const streamers = YAML.parse(streamersYml) as Array<Streamer>
+streamers.sort((a, b) => a.name.localeCompare(b.name, 'fr', { sensitivity: 'base' }))
 
 const countryFlag: Record<string, string> = {
 	'AUS': 'australia',
