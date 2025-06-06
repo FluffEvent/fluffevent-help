@@ -74,20 +74,28 @@ Absolument ! Pour que la communauté Furry se développe, nous avons la convicti
 
 Les mots de l'organisateur : "J'ai toujours adoré l'ambiance des événements caritatifs. Je trouve cela très inspirant, on rencontre des personnes formidables, et on agit très concrètement pour défendre des choses qui nous sont chères à tous. C'est un plaisir immense que de pouvoirs vivre ce genre d'expérience, collaborer, apprendre, découvrir, en fait, je ne voyais que des raisons de m'y lancer !"
 
+</details>
+
 <details>
 <summary>Quelle est la raison de l'inclusion d'une partie de l'événement en anglais ?</summary>
 
 Nous avons réfléchi pas mal de temps à la question. Il y a peu d'événements du genre en France, et beaucoup souhaitaient que l'on reste intégralement francophone. Mais nous trouvions cela dommage de se limiter, car, nous avons tous des amis dans d'autres pays, nous travaillons avec des personnes au-delà des frontières dans notre vie de tous les jours, alors, pourquoi ne pas les inviter à s'amuser avec nous ? Et pour défendre des causes communes, on à besoin de l'aide de tout le monde !
+
+</details>
 
 <details>
 <summary>Pourquoi est-ce que le retour du public nous tient tant à cœur ?</summary>
 
 Nous voulons nous assurer que nous sommes en phase avec ceux qui nous soutiennent ! Selon nous, c'est plus intéressant de proposer des choses qui plaisent au plus grand nombre, de pouvoir travailler ensemble et collaborer pour aller plus loin, plutôt que de rester seul dans notre coin !
 
+</details>
+
 <details>
 <summary>Où envisageons-nous l'événement dans 4 à 5 ans ?</summary>
 
 Si le Fluff Event continue de plaire, nous prévoyons de poursuivre son organisation. Nous chercherons à améliorer nos méthodes et à proposer une gamme d'activités encore plus diversifiée. De plus, nous espérons accueillir des invités venant d'horizons encore plus variés.
+
+</details>
 
 <details>
 <summary>Comment obtenir mes reçus fiscaux suite aux dons envoyés à la Fondation Abbé Pierre ?</summary>
@@ -96,8 +104,13 @@ Lorsque vous faites des dons à la Fondation Abbé Pierre sur StreamLabs Charity
 
 Vous devez ensuite adresser votre demande de reçu fiscaux auprès du service relation donateurs de la Fondation Abbé Pierre, avec votre justificatif, à l'adresse suivante : [email protected]
 
-- Quelques petites informations à propos des goodies
+</details>
+
+<details>
+<summary>Quelques petites informations à propos des goodies</summary>
+
 - Fermeture de la boutique dimanche 28 mai minuit
 - Dans la précipitation, vous avez fait une erreur ? Vous avez la possibilité de changer la taille de votre t-shirt ou d'apporter des modifications à votre adresse de livraison jusqu'au 31 mai à minuit ! Pour nous faire une demande de changement, écrivez nous par mail à [email protected]
 - Créations des goodies a partir du 1er juin Envoie dès le 16 juin au fur et a mesure et jusqu'au 31 juillet
+
 </details>
