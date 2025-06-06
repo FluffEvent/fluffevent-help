@@ -1,7 +1,6 @@
 ---
 import YAML from 'yaml'
 
-import streamersListYml from '~/data/streamers/2023.yml?raw'
 import streamersSocialsYml from '~/data/streamers/socials.yml?raw'
 
 interface StreamerSocials {
@@ -13,6 +12,7 @@ interface StreamerSocials {
 	}>
 }
 
+const { streamersListYml } = Astro.props
 const streamersList = YAML.parse(streamersListYml) as Array<string>
 const streamersSocials = YAML.parse(streamersSocialsYml) as Record<string, StreamerSocials>
 
