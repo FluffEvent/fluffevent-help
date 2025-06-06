@@ -12,7 +12,7 @@ interface StreamerSocials {
 	}>
 }
 
-const { streamersListYml } = Astro.props
+const { streamersListYml = '[]' } = Astro.props
 const streamersList = YAML.parse(streamersListYml) as Array<string>
 const streamersSocials = YAML.parse(streamersSocialsYml) as Record<string, StreamerSocials>
 
