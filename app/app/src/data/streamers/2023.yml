@@ -5,10 +5,10 @@
       url: https://www.twitch.tv/adiale
     - platform: Twitter
       url: https://twitter.com/Adialeee
-    - platform: TikTok
-      url: https://www.tiktok.com/@adialesnox
     - platform: YouTube
       url: https://www.youtube.com/@Adialee
+    - platform: TikTok
+      url: https://www.tiktok.com/@adialesnox
 
 - name: AlexTheCursedRaccoon
   country: FRA
@@ -33,10 +33,10 @@
       url: https://www.twitch.tv/atomicbraven
     - platform: Twitter
       url: https://twitter.com/AtomicBraven
-    - platform: TikTok
-      url: https://www.tiktok.com/@atomicbraven
     - platform: YouTube
       url: https://www.youtube.com/@AtomicBraven
+    - platform: TikTok
+      url: https://www.tiktok.com/@atomicbraven
     - platform: Instagram
       url: https://www.instagram.com/atomicbraven/
 
@@ -47,10 +47,10 @@
       url: https://www.twitch.tv/andre_moraph
     - platform: Twitter
       url: https://twitter.com/andre_moraph
-    - platform: TikTok
-      url: https://www.tiktok.com/@andre_moraph
     - platform: YouTube
       url: https://www.youtube.com/@andre_moraph
+    - platform: TikTok
+      url: https://www.tiktok.com/@andre_moraph
     - platform: Instagram
       url: https://www.instagram.com/moraph/
 
@@ -61,10 +61,10 @@
       url: https://www.twitch.tv/asx_bh
     - platform: Twitter
       url: https://twitter.com/ASX_TV
-    - platform: TikTok
-      url: https://www.tiktok.com/@asxetdimonix
     - platform: YouTube
       url: https://www.youtube.com/@ASXShorts
+    - platform: TikTok
+      url: https://www.tiktok.com/@asxetdimonix
 
 - name: Bartchi
   country: CHE
@@ -73,10 +73,10 @@
       url: https://www.twitch.tv/bartchi
     - platform: Twitter
       url: https://twitter.com/BartchiF
-    - platform: TikTok
-      url: https://www.tiktok.com/@bartchivr
     - platform: YouTube
       url: https://www.youtube.com/@bartchivr
+    - platform: TikTok
+      url: https://www.tiktok.com/@bartchivr
 
 - name: Capitaine Orphy
   country: FRA
@@ -85,10 +85,10 @@
       url: https://www.twitch.tv/capitaine_orphy
     - platform: Twitter
       url: https://twitter.com/AiOrphy
-    - platform: TikTok
-      url: https://www.tiktok.com/@capitaine_orphy
     - platform: YouTube
       url: https://www.youtube.com/@capitaineorphy3616
+    - platform: TikTok
+      url: https://www.tiktok.com/@capitaine_orphy
     - platform: Instagram
       url: https://www.instagram.com/capitaine_orphy/
 
@@ -137,10 +137,10 @@
 #       url: https://www.twitch.tv/fluffevent
 #     - platform: Twitter
 #       url: https://twitter.com/FluffEvent
-#     - platform: TikTok
-#       url: https://www.tiktok.com/@fluffevent
 #     - platform: YouTube
 #       url: https://www.youtube.com/channel/UCBnRzjbBwYsGYm2GZRpUIsA
+#     - platform: TikTok
+#       url: https://www.tiktok.com/@fluffevent
 #     - platform: Instagram
 #       url: https://www.instagram.com/fluffevent/
 
@@ -157,20 +157,20 @@
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/fredrikknudsen
-    - platform: Twitter
-      url: https://twitter.com/LorenOwlfriend
     - platform: YouTube
       url: https://www.youtube.com/fredrikknudsen
+    - platform: Twitter
+      url: https://twitter.com/LorenOwlfriend
 
 - name: Furo
   country: FRA
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/furody_fur
-    - platform: Twitter
-      url: https://twitter.com/FuroFur
     - platform: YouTube
       url: https://www.youtube.com/@furody3722
+    - platform: Twitter
+      url: https://twitter.com/FuroFur
     - platform: Instagram
       url: https://www.instagram.com/furo_fur/
 
@@ -209,10 +209,10 @@
       url: https://www.twitch.tv/kawakudraggy
     - platform: Twitter
       url: https://twitter.com/Shinrufurdrag
-    - platform: TikTok
-      url: https://www.tiktok.com/@kawaku_clips
     - platform: YouTube
       url: https://www.youtube.com/@KawakuDraggy
+    - platform: TikTok
+      url: https://www.tiktok.com/@kawaku_clips
 
 - name: Loic Tomatot
   country: FRA
@@ -221,10 +221,10 @@
       url: https://www.twitch.tv/loictomatot
     - platform: Twitter
       url: https://twitter.com/loictomatot
-    - platform: TikTok
-      url: https://www.tiktok.com/@loictomatot
     - platform: YouTube
       url: https://www.youtube.com/SpartoIllustrations
+    - platform: TikTok
+      url: https://www.tiktok.com/@loictomatot
 
 - name: Luiroi
   country: FRA
@@ -271,10 +271,10 @@
       url: https://www.twitch.tv/seaiter
     - platform: Twitter
       url: https://twitter.com/Seaiter
-    - platform: TikTok
-      url: https://www.tiktok.com/@seaiter
     - platform: YouTube
       url: https://www.youtube.com/@Seaiter
+    - platform: TikTok
+      url: https://www.tiktok.com/@seaiter
 
 - name: SpaceYeen
   country: USA
@@ -291,10 +291,10 @@
       url: https://www.twitch.tv/stanrenart
     - platform: Twitter
       url: https://twitter.com/StanRenart
-    - platform: TikTok
-      url: https://www.tiktok.com/@stanrenart
     - platform: YouTube
       url: https://www.youtube.com/@StanRenartVOD
+    - platform: TikTok
+      url: https://www.tiktok.com/@stanrenart
 
 - name: UmbreoNoctie
   country: FRA
