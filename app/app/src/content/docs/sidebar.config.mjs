@@ -16,8 +16,7 @@ const sidebar = [
 	},
 	{
 		label: 'Fluff Event 2023',
-		// FIXME: Add an index page for this section
-		slug: 'fluff-event-2023/faq',
+		slug: 'fluff-event-2023',
 	},
 	{
 		label: 'Fluff Event 2024',
