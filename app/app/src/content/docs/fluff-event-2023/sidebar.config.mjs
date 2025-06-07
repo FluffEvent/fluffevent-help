@@ -9,7 +9,7 @@ const sidebar = [
 	},
 	{
 		label: 'Fluff Event 2023',
-		link: '#',
+		slug: 'fluff-event-2023',
 	},
 	{
 		label: 'FAQ',
