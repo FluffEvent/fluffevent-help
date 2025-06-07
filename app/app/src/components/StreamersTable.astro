@@ -21,14 +21,6 @@ const streamersSocials = YAML.parse(streamersSocialsYml) as Record<string, Strea
 const streamers: Array<StreamerSocials> = streamersList.map(
 	(name) => streamersSocials[name] || { name, country: '?', socials: [] }
 )
-
-const socialIcons: Record<string, string> = {
-	'twitch': 'mdi--twitch',
-	'twitter': 'mdi--twitter',
-	'youtube': 'mdi--youtube',
-	'tiktok': 'ic--baseline-tiktok',
-	'instagram': 'mdi--instagram',
-}
 ---
 
 <table>
