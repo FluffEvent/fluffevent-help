@@ -367,16 +367,18 @@ yonkagor:
       url: https://www.youtube.com/yonkagor
 
 azeleneuf:
-  # AzeLeHuit, AzeLeNeuf
+  # Doh_Zerta, AzeLeHuit, AzeLeNeuf
   name: AzeLeNeuf
   country: FRA
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/azeleneuf
+    - platform: Twitter
+      url: https://twitter.com/Doh_Zerta
 
 bluedragon:
   name: BlueDragon
-  country: FRA
+  country: '?'
   socials:
 
 drakelelionblanc:
@@ -388,40 +390,327 @@ drakelelionblanc:
 
 kekeflipnote:
   name: KekeFlipnote
-  country: FRA
+  country: '?'
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/kekeflipnote
 
 kuroemberos:
   name: KuroEmberos
-  country: FRA
+  country: '?'
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/kuroemberos
 
 niphoyote:
   name: Niphoyote
-  country: FRA
+  country: '?'
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/niphoyote
 
 nyhgault:
   name: NyhGault
-  country: FRA
+  country: '?'
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/nyhgault
 
 solva:
   name: Solva
-  country: FRA
+  country: '?'
   socials:
 
 yaztalis:
   name: Yaztalis
-  country: FRA
+  country: '?'
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/yaztalis
+
+amiliavt:
+  name: AmiliaVT
+  country: '?'
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/amiliavt
+
+baphostv:
+  name: Bapho
+  country: '?'
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/baphostv
+
+blakeprod:
+  name: BlakeProd
+  country: '?'
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/blakeprod
+
+dodgerakame:
+  name: DodgerAkame
+  country: '?'
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/dodgerakame
+
+elzbietatv:
+  name: ElzBietaTV
+  country: '?'
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/elzbietatv
+
+emarcanine:
+  name: Emarcanine
+  country: '?'
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/emarcanine
+
+endoku_chan:
+  name: Endoku_Chan
+  country: '?'
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/endoku_chan
+
+esliane:
+  name: Esliane
+  country: '?'
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/esliane
+
+extranumby:
+  name: ExtraNumby
+  country: '?'
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/extranumby
+
+foxyareku:
+  name: FoxyAreku
+  country: '?'
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/foxyareku
+
+hildamist:
+  name: HildaMist
+  country: '?'
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/hildamist
+
+ikutokami:
+  name: IkutoKami
+  country: '?'
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/ikutokami
+
+keola:
+  name: Keola
+  country: '?'
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/keola
+
+kokore:
+  name: Kokore
+  country: '?'
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/kokore
+
+lechatoo:
+  name: LeChatoo
+  country: '?'
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/lechatoo
+
+lutzthakitten:
+  name: LutzThaKitten
+  country: '?'
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/lutzthakitten
+
+malidoudou:
+  name: MaliDoudou
+  country: '?'
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/malidoudou
+
+manaryuujin:
+  name: ManaRyuuJin
+  country: '?'
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/manaryuujin
+
+masakifujiwara:
+  name: MasaFujiwara
+  country: '?'
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/masakifujiwara
+
+mommysillica:
+  name: MommySillica
+  country: '?'
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/mommysillica
+
+narcos_furry:
+  name: Narcos_Furry
+  country: '?'
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/narcos_furry
+
+nia_c:
+  name: Nia_C
+  country: '?'
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/nia_c
+
+nisumi:
+  name: Nisumi
+  country: '?'
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/nisumi
+
+peachypiwie:
+  name: PeachyPiwie
+  country: '?'
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/peachypiwie
+
+perceval_robin:
+  name: Perceval Robin
+  country: '?'
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/perceval_robin
+
+pheden:
+  name: Pheden
+  country: '?'
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/pheden
+
+plivecrocodile:
+  name: Plivecrocodile
+  country: '?'
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/plivecrocodile
+
+pocat:
+  name: Pocat
+  country: '?'
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/pocat
+
+ponokichan:
+  name: PonoKichan
+  country: '?'
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/ponokichan
+
+ryuuna_vt:
+  name: Ryuuna_VT
+  country: '?'
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/ryuuna_vt
+
+shalinka:
+  name: Shalinka
+  country: '?'
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/shalinka
+
+shiholitchi:
+  name: Shiholitchi
+  country: '?'
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/shiholitchi
+
+sol_hms:
+  name: Sol_Hms
+  country: '?'
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/sol_hms
+
+spica_stellaris:
+  name: Spica Stellaris
+  country: '?'
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/spica_stellaris
+
+sumashu:
+  name: SumaShu
+  country: '?'
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/sumashu
+
+takudev:
+  name: TakuDev
+  country: '?'
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/takudev
+
+the_skinwalkers:
+  name: The_SkinWalkers
+  country: '?'
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/the_skinwalkers
+
+the_turboyoyo:
+  name: The_TurboYoyo
+  country: '?'
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/the_turboyoyo
+
+volpoune:
+  name: Volpoune
+  country: '?'
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/volpoune
+
+yhusky_kun:
+  name: YHusky_Kun
+  country: '?'
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/yhusky_kun
+
+yuiicky:
+  name: Yuiicky
+  country: '?'
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/yuiicky

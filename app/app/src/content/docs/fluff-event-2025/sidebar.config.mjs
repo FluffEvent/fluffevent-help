@@ -12,6 +12,10 @@ const sidebar = [
 		link: '#',
 	},
 	{
+		label: 'Participants',
+		slug: 'fluff-event-2025/streamers',
+	},
+	{
 		label: 'FAQ',
 		slug: 'fluff-event-2025/faq',
 	},
