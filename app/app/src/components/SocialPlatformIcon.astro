@@ -1,0 +1,30 @@
+---
+type SocialPlatform =
+	| 'twitch' // Twitch
+	| 'twitter' // Twitter
+	| 'youtube' // YouTube
+	| 'tiktok' // TikTok
+	| 'instagram' // Instagram
+
+function parseSocialPlatform(code: any): string | undefined
+{
+	return typeof code === 'string' ? code.toLowerCase() : code
+}
+
+const socialPlatform: SocialPlatform | undefined = parseSocialPlatform(Astro.props.platform) as any
+---
+
+{
+socialPlatform === 'twitch'
+	? <span class="icon-[mdi--twitch] icon-align icon-fw"></span>
+: socialPlatform === 'twitter'
+	? <span class="icon-[mdi--twitter] icon-align icon-fw"></span>
+: socialPlatform === 'youtube'
+	? <span class="icon-[mdi--youtube] icon-align icon-fw"></span>
+: socialPlatform === 'tiktok'
+	? <span class="icon-[ic--baseline-tiktok] icon-align icon-fw"></span>
+: socialPlatform === 'instagram'
+	? <span class="icon-[mdi--instagram] icon-align icon-fw"></span>
+:
+	<em>{socialPlatform}</em>
+}
