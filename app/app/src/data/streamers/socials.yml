@@ -258,12 +258,12 @@ luiroi:
     - platform: TikTok
       url: https://www.tiktok.com/@luiroilefuret
 
-missmixi:
-  name: MissMixi
+mixi:
+  name: Mixi
   country: AUS
   socials:
-    - platform: Twitch
-      url: https://www.twitch.tv/missmixi
+    # - platform: Twitch
+    #   url: https://www.twitch.tv/missmixi
     - platform: Twitter
       url: https://twitter.com/MissMixi
 
@@ -365,3 +365,63 @@ yonkagor:
       url: https://twitter.com/YonKaGor
     - platform: YouTube
       url: https://www.youtube.com/yonkagor
+
+azeleneuf:
+  # AzeLeHuit, AzeLeNeuf
+  name: AzeLeNeuf
+  country: FRA
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/azeleneuf
+
+bluedragon:
+  name: BlueDragon
+  country: FRA
+  socials:
+
+drakelelionblanc:
+  name: DrakeLeLionBlanc
+  country: FRA
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/drakelelionblanc
+
+kekeflipnote:
+  name: KekeFlipnote
+  country: FRA
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/kekeflipnote
+
+kuroemberos:
+  name: KuroEmberos
+  country: FRA
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/kuroemberos
+
+niphoyote:
+  name: Niphoyote
+  country: FRA
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/niphoyote
+
+nyhgault:
+  name: NyhGault
+  country: FRA
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/nyhgault
+
+solva:
+  name: Solva
+  country: FRA
+  socials:
+
+yaztalis:
+  name: Yaztalis
+  country: FRA
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/yaztalis

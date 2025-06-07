@@ -63,7 +63,7 @@ const socialIcons: Record<string, string> = {
 				</td>
 				<td>{streamer.name}</td>
 				<td>
-					{streamer.socials.map((social, index) => (
+					{streamer.socials?.map((social, index) => (
 						<>
 							<a href={social.url} target="_blank" rel="noopener noreferrer">{
 								socialIcons[social.platform.toLowerCase()] !== undefined
