@@ -2,6 +2,7 @@
 import YAML from 'yaml'
 
 import CountryFlag from '~/components/CountryFlag.astro'
+import SocialPlatformIcon from '~/components/SocialPlatformIcon.astro'
 import streamersSocialsYml from '~/data/streamers/socials.yml?raw'
 
 interface StreamerSocials {
@@ -51,9 +52,7 @@ const socialIcons: Record<string, string> = {
 					{streamer.socials?.map((social, index) => (
 						<>
 							<a href={social.url} target="_blank" rel="noopener noreferrer">{
-								socialIcons[social.platform.toLowerCase()] !== undefined
-									? <span class={`icon-[${socialIcons[social.platform.toLowerCase()]}] icon-align icon-fw`}></span>
-									: <em>{social.platform}</em>
+								}<SocialPlatformIcon platform={social.platform} />{
 							}</a>{index < streamer.socials.length - 1 && ', '}
 						</>
 					))}
