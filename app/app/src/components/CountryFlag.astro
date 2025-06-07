@@ -1,0 +1,40 @@
+---
+type CountryCode =
+	| 'AUS' // Australia
+	| 'BEL' // Belgium
+	| 'CAN' // Canada
+	| 'CHE' // Switzerland
+	| 'ESP' // Spain
+	| 'FRA' // France
+	| 'GBR' // United Kingdom
+	| 'IDN' // Indonesia
+	| 'ITA' // Italy
+	| 'USA' // United States
+
+const countryCode: CountryCode = Astro.props.country
+---
+
+{
+countryCode === 'AUS'
+	? <span class="icon-[twemoji--flag-australia] icon-align icon-fw"></span>
+: countryCode === 'BEL'
+	? <span class="icon-[twemoji--flag-belgium] icon-align icon-fw"></span>
+: countryCode === 'CAN'
+	? <span class="icon-[twemoji--flag-canada] icon-align icon-fw"></span>
+: countryCode === 'CHE'
+	? <span class="icon-[twemoji--flag-switzerland] icon-align icon-fw"></span>
+: countryCode === 'ESP'
+	? <span class="icon-[twemoji--flag-spain] icon-align icon-fw"></span>
+: countryCode === 'FRA'
+	? <span class="icon-[twemoji--flag-france] icon-align icon-fw"></span>
+: countryCode === 'GBR'
+	? <span class="icon-[twemoji--flag-united-kingdom] icon-align icon-fw"></span>
+: countryCode === 'IDN'
+	? <span class="icon-[twemoji--flag-indonesia] icon-align icon-fw"></span>
+: countryCode === 'ITA'
+	? <span class="icon-[twemoji--flag-italy] icon-align icon-fw"></span>
+: countryCode === 'USA'
+	? <span class="icon-[twemoji--flag-united-states] icon-align icon-fw"></span>
+:
+	<em>{countryCode}</em>
+}

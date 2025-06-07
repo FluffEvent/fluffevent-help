@@ -1,6 +1,7 @@
 ---
 import YAML from 'yaml'
 
+import CountryFlag from '~/components/CountryFlag.astro'
 import streamersSocialsYml from '~/data/streamers/socials.yml?raw'
 
 interface StreamerSocials {
@@ -19,19 +20,6 @@ const streamersSocials = YAML.parse(streamersSocialsYml) as Record<string, Strea
 const streamers: Array<StreamerSocials> = streamersList.map(
 	(name) => streamersSocials[name] || { name, country: '?', socials: [] }
 )
-
-const countryFlag: Record<string, string> = {
-	'AUS': 'australia',
-	'BEL': 'belgium',
-	'CAN': 'canada',
-	'CHE': 'switzerland',
-	'ESP': 'spain',
-	'FRA': 'france',
-	'GBR': 'united-kingdom',
-	'IDN': 'indonesia',
-	'ITA': 'italy',
-	'USA': 'united-states',
-}
 
 const socialIcons: Record<string, string> = {
 	'twitch': 'mdi--twitch',
@@ -56,10 +44,7 @@ const socialIcons: Record<string, string> = {
 		{streamers.map((streamer) => (
 			<tr>
 				<td>
-					{countryFlag[streamer.country] !== undefined
-						? <span class={`icon-[twemoji--flag-${countryFlag[streamer.country]}] icon-align icon-fw`}></span>
-						: <em>{streamer.country}</em>
-					}
+					<CountryFlag country={streamer.country} />
 				</td>
 				<td>{streamer.name}</td>
 				<td>
