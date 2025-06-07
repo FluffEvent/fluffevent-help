@@ -15,6 +15,10 @@ const sidebar = [
 		slug: 'index',
 	},
 	{
+		label: 'L\'association',
+		slug: 'fluff-event',
+	},
+	{
 		label: 'Fluff Event 2023',
 		slug: 'fluff-event-2023',
 	},
