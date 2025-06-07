@@ -15,10 +15,10 @@ const sidebar = [
 		label: 'Documents officiels',
 		slug: 'fluff-event/documents',
 	},
-	// {
-	// 	label: 'Mentions légales',
-	// 	slug: 'fluff-event/legal-notice',
-	// },
+	{
+		label: 'Mentions légales',
+		slug: 'fluff-event/legal-notice',
+	},
 	// {
 	// 	label: 'CGV',
 	// 	slug: 'fluff-event/cgv',
