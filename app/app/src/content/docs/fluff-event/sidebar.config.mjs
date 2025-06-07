@@ -11,10 +11,10 @@ const sidebar = [
 		label: 'Fluff Event',
 		slug: 'fluff-event',
 	},
-	// {
-	// 	label: 'Documents officiels',
-	// 	slug: 'fluff-event/documents',
-	// },
+	{
+		label: 'Documents officiels',
+		slug: 'fluff-event/documents',
+	},
 	// {
 	// 	label: 'Mentions légales',
 	// 	slug: 'fluff-event/legal-notice',
