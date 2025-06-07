@@ -11,7 +11,12 @@ type CountryCode =
 	| 'ITA' // Italy
 	| 'USA' // United States
 
-const countryCode: CountryCode = Astro.props.country
+function parseCountryCode(code: any): string | undefined
+{
+	return typeof code === 'string' ? code.toUpperCase() : code
+}
+
+const countryCode: CountryCode | undefined = parseCountryCode(Astro.props.country) as any
 ---
 
 {
