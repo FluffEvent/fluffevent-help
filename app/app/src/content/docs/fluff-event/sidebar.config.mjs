@@ -12,17 +12,26 @@ const sidebar = [
 		slug: 'fluff-event',
 	},
 	{
-		label: 'Documents officiels',
-		slug: 'fluff-event/documents',
+		label: 'Ressources officielles',
+		translations: {
+			en: 'Official resources',
+		},
+		collapsed: false,
+		items: [
+			{
+				label: 'Documents officiels',
+				slug: 'fluff-event/official/documents',
+			},
+			{
+				label: 'Mentions légales',
+				slug: 'fluff-event/official/legal-notice',
+			},
+			// {
+			// 	label: 'CGV',
+			// 	slug: 'fluff-event/official/cgv',
+			// },
+		],
 	},
-	{
-		label: 'Mentions légales',
-		slug: 'fluff-event/legal-notice',
-	},
-	// {
-	// 	label: 'CGV',
-	// 	slug: 'fluff-event/cgv',
-	// },
 ]
 
 export default sidebar
