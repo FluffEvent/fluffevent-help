@@ -20,6 +20,13 @@ const sidebar = [
 		slug: 'fluff-event-2025/donations',
 	},
 	{
+		label: 'Boutique',
+		translations: {
+			en: 'Shop',
+		},
+		slug: 'fluff-event-2025/shop',
+	},
+	{
 		label: 'FAQ',
 		slug: 'fluff-event-2025/faq',
 	},
