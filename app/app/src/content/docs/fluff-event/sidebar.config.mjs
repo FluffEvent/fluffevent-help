@@ -12,6 +12,13 @@ const sidebar = [
 		slug: 'fluff-event',
 	},
 	{
+		label: 'Liens utiles',
+		translations: {
+			en: 'Useful links',
+		},
+		slug: 'fluff-event/links',
+	},
+	{
 		label: 'Ressources officielles',
 		translations: {
 			en: 'Official resources',
