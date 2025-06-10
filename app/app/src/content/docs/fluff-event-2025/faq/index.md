@@ -96,4 +96,4 @@ L'événement a fait **voter la communauté** à ce sujet, et la majorité des p
 
 </details>
 
-Vous ne voyez pas votre question ici ? Posez-là sur le [Discord](https://discord.gg/rAesnJHuPe) ou le [Telegram](https://t.me/FluffEvent).
+Pour toute autre question ou problème sur lequel nous pouvons vous aider, n'hésitez pas à nous contacter par e-mail à [contact@fluffevent.fr](mailto:contact@fluffevent.fr), ou en ouvrant un ticket sur notre [Discord](https://discord.com/invite/rAesnJHuPe).
