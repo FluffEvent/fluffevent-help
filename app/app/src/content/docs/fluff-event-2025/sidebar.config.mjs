@@ -27,7 +27,10 @@ const sidebar = [
 		slug: 'fluff-event-2025/shop',
 	},
 	{
-		label: 'FAQ',
+		label: 'FAQ Générale',
+		translations: {
+			en: 'General FAQ',
+		},
 		slug: 'fluff-event-2025/faq',
 	},
 ]

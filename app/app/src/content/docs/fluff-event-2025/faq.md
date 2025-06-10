@@ -1,5 +1,5 @@
 ---
-title: FAQ Fluff Event 2025
+title: FAQ Générale Fluff Event 2025
 ---
 
 <details>
