@@ -12,6 +12,13 @@ const sidebar = [
 		slug: 'fluff-event-2025',
 	},
 	{
+		label: 'Cagnotte',
+		translations: {
+			en: 'Fundraising',
+		},
+		slug: 'fluff-event-2025/fundraising',
+	},
+	{
 		label: 'Participants',
 		slug: 'fluff-event-2025/streamers',
 	},

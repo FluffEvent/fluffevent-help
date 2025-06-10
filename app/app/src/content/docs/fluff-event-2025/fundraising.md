@@ -1,0 +1,65 @@
+---
+title: Cagnotte Fluff Event 2025
+---
+
+## État de la cagnotte
+
+Le montant de la cagnotte enregistré à la fin de l'événement en direct est de <u>**31 477 €**</u> ! Ce montant inclut **30 641 €** de dons directs à l'association **En Avant Toute(s)**, ainsi que **836 €** de bénéfices de la boutique en ligne de l'événement.
+
+L'événement en direct est terminé mais la cagnotte continue à être mise à jour avec les dons effectués sur la boutique en ligne de l'événement, qui reste ouverte jusqu'au 15 juin 2025 inclus.
+
+Vous pouvez trouvez la cagnotte mise à jour en temps réel sur le site de l'événement : [fluffevent.fr](https://fluffevent.fr).
+
+
+## FAQ
+
+<details>
+<summary>Comment est calculée la cagnotte ?</summary>
+
+La cagnotte est calculée à partir des dons effectués sur **Streamlabs Charity** pendant l'événement, ainsi que des **bénéfices de la boutique** en ligne de l'événement. Elle est mise à jour en quasi temps réel pendant l'événement.
+
+</details>
+
+<details>
+<summary>Où peut-on voir la cagnotte ?</summary>
+
+Le montant de la cagnotte est affiché en quasi temps réel sur le **site de l'événement** ([fluffevent.fr](https://fluffevent.fr)). Pendant l'événement en direct, il est également affiché dans le flux vidéo des chaînes Twitch des participants en diffusion.
+
+</details>
+
+<details>
+<summary>Que signifie "à la fin de l'événement en direct" ?</summary>
+
+La fin de l'événement en direct a été fixée au **2 juin 2025 à 0:30 (UTC+2)**.
+
+Le montant de la cagnotte a été enregistré à ce moment-là et partagé sur les réseaux sociaux de l'événement. Ce montant inclut les dons directs et les bénéfices de la boutique en ligne jusqu'à cette date et heure.
+
+</details>
+
+<details>
+<summary>Quand la cagnotte se termine-t-elle ?</summary>
+
+La cagnotte ne se termine réellement qu'à la fin de l'exercice financier de l'événement, qui arrive lorsque toutes les livraisons de la boutique en ligne sont effectuées, ce qui permet de comptabiliser tous les dons et bénéfices réalisés pour l'association soutenue **En Avant Toute(s)**.
+
+En attendant, la cagnotte continue d'être mise à jour et ses montants sont partagés sur les réseaux sociaux de l'événement à des moments clés.
+
+Le montant de la cagnotte est enregistré à trois moments clés :
+- À la clôture de l'événement en direct, le 2 juin 2025 à 0:30 (UTC+2).
+- À la fermeture de la boutique en ligne, le 16 juin 2025 à 0:30 (UTC+2).
+- À la clôture de l'exercice comptable de l'événement.
+
+À chacun de ces moments, le montant de la cagnotte ainsi observé est partagé sur les réseaux de communication et sociaux de l'événement !
+
+</details>
+
+<details>
+<summary>Quels sont les montants partagés sur les réseaux sociaux ?</summary>
+
+Les montants partagés sur les réseaux sociaux de l'événement sont les suivants :
+
+- Des **palliers significatifs** de la cagnotte atteints pendant l'événement en direct, comme les 10 000 €, 20 000 €, 25 000 € atteints.
+- Le montant de la cagnotte à **la fin de l'événement** en direct, déterminé après la cérémonie de fermeture et fixé le 2 juin 2025 à 0:30 (UTC+2).
+- Le montant de la cagnotte à **la fermeture de la boutique** en ligne, déterminé après les derniers achats et fixé le 16 juin 2025 à 0:30 (UTC+2).
+- Le montant de la cagnotte à **la clôture de l'exercice comptable** de l'événement, lorsque la cagnotte est définitivement terminée.
+
+</details>
