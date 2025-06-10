@@ -1,5 +1,5 @@
 ---
-title: Boutique Fluff Event 2025
+title: FAQ Boutique Fluff Event 2025
 ---
 
 ## Informations
