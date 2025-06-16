@@ -4,11 +4,11 @@ title: Cagnotte Fluff Event 2025
 
 ## État actuel de la cagnotte
 
-Le montant de la cagnotte enregistré à la fin de l'événement en direct est de **31 477 €** !
+Le montant de la cagnotte enregistré à la fermeture de la boutique en ligne est de **32 077 €** !
 
-L'événement en direct est terminé mais la cagnotte continue d'être mise à jour avec les dons issus des achats sur la boutique en ligne de l'événement, ouverte jusqu'au 15 juin 2025 inclus.
+Depuis le 16 juin 2025, l'événement en direct est terminé et la boutique en ligne a fermé. La cagnotte pourra à nouveau être mise à jour à la clôture de l'exercice comptable de l'événement, une fois tous les dons et bénéfices pour l'association soutenue **En Avant Toute(s)** comptabilisés.
 
-Vous pouvez trouvez la cagnotte mise à jour en temps réel sur le site de l'événement : [fluffevent.fr](https://fluffevent.fr).
+Vous pouvez trouvez la cagnotte mise à jour en temps réel et d'autres informations sur le site de l'événement : [fluffevent.fr](https://fluffevent.fr).
 
 
 ## Détails de la cagnotte
@@ -19,13 +19,11 @@ Le montant de la cagnotte enregistré à la fin de l'événement en direct est d
 - **30 641 €** de dons directs à l'association **En Avant Toute(s)**,
 - **836 €** de dons issus de la boutique en ligne de l'événement.
 
-<!--
 ### À la fermeture de la boutique en ligne
 
-Le montant de la cagnotte enregistré à la fermeture de la boutique en ligne est de <u>**31 477 €**</u>, dont :
-- **30 641 €** de dons directs à l'association **En Avant Toute(s)**,
-- **836 €** de dons issus de la boutique en ligne de l'événement.
--->
+Le montant de la cagnotte enregistré à la fermeture de la boutique en ligne est de **32 077 €**, dont :
+- **30 749 €** de dons directs à l'association **En Avant Toute(s)**,
+- **1 328 €** de dons issus de la boutique en ligne de l'événement.
 
 
 ## FAQ
@@ -80,7 +78,7 @@ Le montant observé à ce moment là inclut :
 <details>
 <summary>Quand est "la fermeture de la boutique en ligne" ?</summary>
 
-La fermeture de la boutique en ligne a été fixée au **16 juin 2025 à 12:00 (UTC+2)**.
+La fermeture de la boutique en ligne a été fixée au **16 juin 2025 à 13:00 (UTC+2)**.
 
 Le montant observé à ce moment là inclut :
 - les dons directs sur Streamlabs Charity,
