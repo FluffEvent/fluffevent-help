@@ -2,15 +2,30 @@
 title: Cagnotte Fluff Event 2025
 ---
 
-## État de la cagnotte
+## État actuel de la cagnotte
 
-Le montant de la cagnotte enregistré à la fin de l'événement en direct est de <u>**31 477 €**</u> ! Ce montant inclus :
-- **30 641 €** de dons directs à l'association **En Avant Toute(s)**,
-- **836 €** de dons issus de la boutique en ligne de l'événement.
+Le montant de la cagnotte enregistré à la fin de l'événement en direct est de **31 477 €** !
 
 L'événement en direct est terminé mais la cagnotte continue d'être mise à jour avec les dons issus des achats sur la boutique en ligne de l'événement, ouverte jusqu'au 15 juin 2025 inclus.
 
 Vous pouvez trouvez la cagnotte mise à jour en temps réel sur le site de l'événement : [fluffevent.fr](https://fluffevent.fr).
+
+
+## Détails de la cagnotte
+
+### À la fin de l'événement en direct
+
+Le montant de la cagnotte enregistré à la fin de l'événement en direct est de **31 477 €**, dont :
+- **30 641 €** de dons directs à l'association **En Avant Toute(s)**,
+- **836 €** de dons issus de la boutique en ligne de l'événement.
+
+<!--
+### À la fermeture de la boutique en ligne
+
+Le montant de la cagnotte enregistré à la fermeture de la boutique en ligne est de <u>**31 477 €**</u>, dont :
+- **30 641 €** de dons directs à l'association **En Avant Toute(s)**,
+- **836 €** de dons issus de la boutique en ligne de l'événement.
+-->
 
 
 ## FAQ
@@ -56,7 +71,7 @@ Le partage de ces montants est effectué sur les réseaux sociaux de l'événeme
 
 La fin de l'événement en direct a été fixée au **2 juin 2025 à 0:30 (UTC+2)**.
 
-Le montant observé à ce moment là inclus :
+Le montant observé à ce moment là inclut :
 - les dons directs sur Streamlabs Charity,
 - les dons issus de la boutique en ligne jusqu'à cette date et heure.
 
@@ -67,7 +82,7 @@ Le montant observé à ce moment là inclus :
 
 La fermeture de la boutique en ligne a été fixée au **16 juin 2025 à 12:00 (UTC+2)**.
 
-Le montant observé à ce moment là inclus :
+Le montant observé à ce moment là inclut :
 - les dons directs sur Streamlabs Charity,
 - les dons issus de la boutique en ligne jusqu'à cette date et heure.
 
@@ -78,7 +93,7 @@ Le montant observé à ce moment là inclus :
 
 La clôture de l'exercice comptable de l'événement sera fixée lorsque toutes les livraisons de la boutique en ligne seront effectuées.
 
-Le montant observé à ce moment là inclus :
+Le montant observé à ce moment là inclut :
 - les dons directs sur Streamlabs Charity,
 - les dons issus de la boutique en ligne jusqu'à cette date et heure,
 - les bénéfices exceptionnels de la boutique en ligne.
