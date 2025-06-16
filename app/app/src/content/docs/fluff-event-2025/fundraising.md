@@ -4,9 +4,11 @@ title: Cagnotte Fluff Event 2025
 
 ## État de la cagnotte
 
-Le montant de la cagnotte enregistré à la fin de l'événement en direct est de <u>**31 477 €**</u> ! Ce montant inclut **30 641 €** de dons directs à l'association **En Avant Toute(s)**, ainsi que **836 €** de bénéfices de la boutique en ligne de l'événement.
+Le montant de la cagnotte enregistré à la fin de l'événement en direct est de <u>**31 477 €**</u> ! Ce montant inclus :
+- **30 641 €** de dons directs à l'association **En Avant Toute(s)**, ainsi que
+- **836 €** de dons issus de la boutique en ligne de l'événement.
 
-L'événement en direct est terminé mais la cagnotte continue à être mise à jour avec les dons effectués sur la boutique en ligne de l'événement, qui reste ouverte jusqu'au 15 juin 2025 inclus.
+L'événement en direct est terminé mais la cagnotte continue d'être mise à jour avec les dons issus des achats sur la boutique en ligne de l'événement, ouverte jusqu'au 15 juin 2025 inclus.
 
 Vous pouvez trouvez la cagnotte mise à jour en temps réel sur le site de l'événement : [fluffevent.fr](https://fluffevent.fr).
 
