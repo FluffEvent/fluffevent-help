@@ -23,12 +23,26 @@ const sidebar = [
 		slug: 'fluff-event-2025/streamers',
 	},
 	{
-		label: 'Dons',
-		slug: 'fluff-event-2025/donations',
-	},
-	{
-		label: 'FAQ',
-		slug: 'fluff-event-2025/faq',
+		label: 'Services',
+		translations: {
+			en: 'Services',
+		},
+		items: [
+			{
+				label: 'Dons',
+				translations: {
+					en: 'Donations',
+				},
+				slug: 'fluff-event-2025/donations',
+			},
+			{
+				label: 'FAQ Générale',
+				translations: {
+					en: 'General FAQ',
+				},
+				slug: 'fluff-event-2025/faq',
+			},
+		],
 	},
 ]
 
