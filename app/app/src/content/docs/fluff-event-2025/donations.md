@@ -4,7 +4,18 @@ title: Dons Fluff Event 2025
 
 ## Informations
 
-...
+Vous avez la possibilité de faire un don pour soutenir l'association **En Avant Toute(s)**, qui lutte pour l'égalité de genre et la fin des violences sexistes et sexuelles, pendant l'événement Fluff Event 2025, **du 30 mai au 1<sup>er</sup> juin 2025**.
+
+Les dons sont effectués via **Streamlabs Charity**, une plateforme de collecte de fonds dédiée aux événements caritatifs. Cette plateforme est un tiers de confiance qui permet de garantir la sécurité de vos transactions, la comptabilisation des dons, et la remise des fonds **intégralement et directement** à l'association soutenue sans frais supplémentaires.
+
+L'association Fluff Event, organisatrice de l'événemment, utilise les données de Streamlabs Charity pour comptabiliser les dons dans la cagnotte et pour attribuer aux donateurs les récompenses associées à leurs dons.
+
+
+## Données personnelles
+
+Pour permettre la comptabilisation des dons et l'attribution des récompenses, l'association organisatrice **Fluff Event** collecte les données de votre don : votre pseudonyme, le message du don, et le montant du don. Nous n'avons pas accès à vos informations de paiement ou à votre adresse e-mail.
+
+Pour permettre la gestion des dons et l'envoi de reçus fiscaux, l'association soutenue **En Avant Toute(s)** collecte votre adresse e-mail afin de vous envoyer un e-mail de remerciement à la fin de l'événement et de vous fournir les informations nécessaires pour obtenir votre reçu fiscal.
 
 
 ## FAQ
