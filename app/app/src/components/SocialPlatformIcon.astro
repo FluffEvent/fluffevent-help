@@ -3,6 +3,7 @@ type SocialPlatform =
 	| 'twitch' // Twitch
 	| 'bluesky' // Bluesky
 	| 'twitter' // Twitter
+	| 'mastodon' // Mastodon
 	| 'youtube' // YouTube
 	| 'tiktok' // TikTok
 	| 'instagram' // Instagram
@@ -22,6 +23,8 @@ const socialPlatform: SocialPlatform | undefined = parseSocialPlatform(Astro.pro
 		? <span class="icon-[ri--bluesky-fill] icon-align icon-fw"></span>
 	: socialPlatform === 'twitter'
 		? <span class="icon-[mdi--twitter] icon-align icon-fw"></span>
+	: socialPlatform === 'mastodon'
+		? <span class="icon-[mdi--mastodon] icon-align icon-fw"></span>
 	: socialPlatform === 'youtube'
 		? <span class="icon-[mdi--youtube] icon-align icon-fw"></span>
 	: socialPlatform === 'tiktok'
