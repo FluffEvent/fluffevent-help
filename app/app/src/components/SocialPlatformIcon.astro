@@ -4,9 +4,12 @@ type SocialPlatform =
 	| 'bluesky' // Bluesky
 	| 'twitter' // Twitter
 	| 'mastodon' // Mastodon
+	| 'facebook' // Facebook
 	| 'youtube' // YouTube
 	| 'tiktok' // TikTok
 	| 'instagram' // Instagram
+	| 'telegram' // Telegram
+	| 'github' // GitHub
 	| 'website' // Website
 	| 'links' // Links
 
@@ -27,12 +30,18 @@ const socialPlatform: SocialPlatform | undefined = parseSocialPlatform(Astro.pro
 		? <span class="icon-[mdi--twitter] icon-align icon-fw"></span>
 	: socialPlatform === 'mastodon'
 		? <span class="icon-[mdi--mastodon] icon-align icon-fw"></span>
+	: socialPlatform === 'facebook'
+		? <span class="icon-[mdi--facebook] icon-align icon-fw"></span>
 	: socialPlatform === 'youtube'
 		? <span class="icon-[mdi--youtube] icon-align icon-fw"></span>
 	: socialPlatform === 'tiktok'
 		? <span class="icon-[ic--baseline-tiktok] icon-align icon-fw"></span>
 	: socialPlatform === 'instagram'
 		? <span class="icon-[mdi--instagram] icon-align icon-fw"></span>
+	: socialPlatform === 'telegram'
+		? <span class="icon-[mdi--telegram] icon-align icon-fw"></span>
+	: socialPlatform === 'github'
+		? <span class="icon-[mdi--github] icon-align icon-fw"></span>
 	: socialPlatform === 'website'
 		? <span class="icon-[mdi--web] icon-align icon-fw"></span>
 	: socialPlatform === 'links'
