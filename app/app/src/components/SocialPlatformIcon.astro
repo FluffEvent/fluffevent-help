@@ -1,57 +1,42 @@
 ---
 type SocialPlatform =
-	| 'twitch' // Twitch
 	| 'bluesky' // Bluesky
-	| 'twitter' // Twitter
-	| 'mastodon' // Mastodon
 	| 'facebook' // Facebook
-	| 'youtube' // YouTube
-	| 'tiktok' // TikTok
-	| 'instagram' // Instagram
-	| 'telegram' // Telegram
-	| 'patreon' // Patreon
-	| 'tumblr' // Tumblr
 	| 'github' // GitHub
-	| 'website' // Website
+	| 'instagram' // Instagram
 	| 'links' // Links
+	| 'mastodon' // Mastodon
+	| 'patreon' // Patreon
+	| 'telegram' // Telegram
+	| 'tiktok' // TikTok
+	| 'tumblr' // Tumblr
+	| 'twitch' // Twitch
+	| 'twitter' // Twitter
+	| 'website' // Website
+	| 'youtube' // YouTube
 
 function parseSocialPlatform(code: any): string | undefined
 {
 	return typeof code === 'string' ? code.toLowerCase() : code
 }
 
-const socialPlatform: SocialPlatform | undefined = parseSocialPlatform(Astro.props.platform) as any
+const sp: SocialPlatform | undefined = parseSocialPlatform(Astro.props.platform) as any
 ---
 
 {
-	socialPlatform === 'twitch'
-		? <span class="icon-[mdi--twitch] icon-align icon-fw"></span>
-	: socialPlatform === 'bluesky'
-		? <span class="icon-[ri--bluesky-fill] icon-align icon-fw"></span>
-	: socialPlatform === 'twitter'
-		? <span class="icon-[mdi--twitter] icon-align icon-fw"></span>
-	: socialPlatform === 'mastodon'
-		? <span class="icon-[mdi--mastodon] icon-align icon-fw"></span>
-	: socialPlatform === 'facebook'
-		? <span class="icon-[mdi--facebook] icon-align icon-fw"></span>
-	: socialPlatform === 'youtube'
-		? <span class="icon-[mdi--youtube] icon-align icon-fw"></span>
-	: socialPlatform === 'tiktok'
-		? <span class="icon-[ic--baseline-tiktok] icon-align icon-fw"></span>
-	: socialPlatform === 'instagram'
-		? <span class="icon-[mdi--instagram] icon-align icon-fw"></span>
-	: socialPlatform === 'telegram'
-		? <span class="icon-[mdi--telegram] icon-align icon-fw"></span>
-	: socialPlatform === 'patreon'
-		? <span class="icon-[mdi--patreon] icon-align icon-fw"></span>
-	: socialPlatform === 'tumblr'
-		? <span class="icon-[mdi--tumblr] icon-align icon-fw"></span>
-	: socialPlatform === 'github'
-		? <span class="icon-[mdi--github] icon-align icon-fw"></span>
-	: socialPlatform === 'website'
-		? <span class="icon-[mdi--web] icon-align icon-fw"></span>
-	: socialPlatform === 'links'
-		? <span class="icon-[mdi--link] icon-align icon-fw"></span>
-	:
-		<em>{socialPlatform}</em>
+	sp === 'bluesky' ? <span class="icon-[ri--bluesky-fill] icon-align icon-fw"></span>
+	: sp === 'facebook' ? <span class="icon-[mdi--facebook] icon-align icon-fw"></span>
+	: sp === 'github' ? <span class="icon-[mdi--github] icon-align icon-fw"></span>
+	: sp === 'instagram' ? <span class="icon-[mdi--instagram] icon-align icon-fw"></span>
+	: sp === 'links' ? <span class="icon-[mdi--link] icon-align icon-fw"></span>
+	: sp === 'mastodon' ? <span class="icon-[mdi--mastodon] icon-align icon-fw"></span>
+	: sp === 'patreon' ? <span class="icon-[mdi--patreon] icon-align icon-fw"></span>
+	: sp === 'telegram' ? <span class="icon-[mdi--telegram] icon-align icon-fw"></span>
+	: sp === 'tiktok' ? <span class="icon-[ic--baseline-tiktok] icon-align icon-fw"></span>
+	: sp === 'tumblr' ? <span class="icon-[mdi--tumblr] icon-align icon-fw"></span>
+	: sp === 'twitch' ? <span class="icon-[mdi--twitch] icon-align icon-fw"></span>
+	: sp === 'twitter' ? <span class="icon-[mdi--twitter] icon-align icon-fw"></span>
+	: sp === 'website' ? <span class="icon-[mdi--web] icon-align icon-fw"></span>
+	: sp === 'youtube' ? <span class="icon-[mdi--youtube] icon-align icon-fw"></span>
+	: <em>{sp}</em>
 }
