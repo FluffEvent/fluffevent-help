@@ -29,6 +29,16 @@ const { streamersListYml = '[]' } = Astro.props
 const streamersList = YAML.parse(streamersListYml) as Array<string>
 const streamersSocials = YAML.parse(streamersSocialsYml) as Record<string, YamlStreamerSocials>
 
+const socialPlatforms = [
+	'twitch',
+	'bluesky',
+	'twitter',
+	'youtube',
+	'tiktok',
+	'website',
+	'links',
+]
+
 const streamers: Array<StreamerSocials> = streamersList.map(
 	(name): StreamerSocials =>
 	{
@@ -46,11 +56,21 @@ const streamers: Array<StreamerSocials> = streamersList.map(
 		return {
 			name: streamer.name,
 			country: streamer.country,
-			socials: (streamer.socials || []).map(
-				(social) => ({
-					platform: social.platform.toLowerCase(),
-					url: social.url
-				})
+			socials: socialPlatforms.reduce(
+				(socials, platform) =>
+				{
+					const social = streamer.socials?.find(
+						(s) => s.platform.toLowerCase() === platform
+					)
+
+					if (social)
+					{
+						socials.push(social)
+					}
+
+					return socials
+				},
+				[] as StreamerSocials['socials'],
 			)
 		}
 	}
