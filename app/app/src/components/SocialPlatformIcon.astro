@@ -9,6 +9,8 @@ type SocialPlatform =
 	| 'tiktok' // TikTok
 	| 'instagram' // Instagram
 	| 'telegram' // Telegram
+	| 'patreon' // Patreon
+	| 'tumblr' // Tumblr
 	| 'github' // GitHub
 	| 'website' // Website
 	| 'links' // Links
@@ -40,6 +42,10 @@ const socialPlatform: SocialPlatform | undefined = parseSocialPlatform(Astro.pro
 		? <span class="icon-[mdi--instagram] icon-align icon-fw"></span>
 	: socialPlatform === 'telegram'
 		? <span class="icon-[mdi--telegram] icon-align icon-fw"></span>
+	: socialPlatform === 'patreon'
+		? <span class="icon-[mdi--patreon] icon-align icon-fw"></span>
+	: socialPlatform === 'tumblr'
+		? <span class="icon-[mdi--tumblr] icon-align icon-fw"></span>
 	: socialPlatform === 'github'
 		? <span class="icon-[mdi--github] icon-align icon-fw"></span>
 	: socialPlatform === 'website'
