@@ -378,8 +378,16 @@ azeleneuf:
 
 bluedragon:
   name: BlueDragon
-  country: '?'
+  country: FRA
   socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/bluedragonfr_
+    - platform: Twitter
+      url: https://twitter.com/BlueDragonFr
+    - platform: TikTok
+      url: https://www.tiktok.com/@bluedragonfr
+    - platform: YouTube
+      url: https://www.youtube.com/BlueDragonFr
 
 drakelelionblanc:
   name: DrakeLeLionBlanc
@@ -387,27 +395,55 @@ drakelelionblanc:
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/drakelelionblanc
+    - platform: Bluesky
+      url: https://bsky.app/profile/drakelelionblanc.bsky.social
+    - platform: Twitter
+      url: https://twitter.com/DrakeLionBlanc
+    - platform: YouTube
+      url: https://www.youtube.com/channel/UCxEhUFS_YKodlF3YgqX4Mmg
 
 kekeflipnote:
   name: KekeFlipnote
-  country: '?'
+  country: FRA
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/kekeflipnote
+    - platform: Twitter
+      url: https://x.com/KekeFlipnote
+    - platform: Patreon
+      url: https://www.patreon.com/k_eke
+    - platform: YouTube
+      url: https://www.youtube.com/channel/UCNdNkUfhFfzBtKRU_5QgUvw
+    - platform: Tumblr
+      url: https://k-eke.tumblr.com/
 
 kuroemberos:
-  name: KuroEmberos
+  name: Kuro Emberos
   country: '?'
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/kuroemberos
+    - platform: Twitter
+      url: https://twitter.com/EmberosKuro
+    - platform: TikTok
+      url: https://www.tiktok.com/@kuroemberosvtuber
+    - platform: YouTube
+      url: https://www.youtube.com/channel/UC98Lm-r7jfRHtypAbRFCkeQ
 
 niphoyote:
-  name: Niphoyote
-  country: '?'
+  name: NiphoYote
+  country: ESP
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/niphoyote
+    - platform: Bluesky
+      url: https://bsky.app/profile/nipho.bsky.social
+    - platform: Twitter
+      url: https://twitter.com/NiphoYote
+    - platform: YouTube
+      url: https://www.youtube.com/@NiphoYote
+    - platform: Telegram
+      url: https://t.me/+4RLzrQpzjCBhZjE0
 
 nyhgault:
   name: NyhGault
@@ -417,9 +453,15 @@ nyhgault:
       url: https://www.twitch.tv/nyhgault
 
 solva:
-  name: Solva
+  name: Catboat
   country: '?'
   socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/catboat
+    - platform: YouTube
+      url: https://www.youtube.com/@catboatandrot
+    - platform: TikTok
+      url: https://www.tiktok.com/@catboatandrot/
 
 yaztalis:
   name: Yaztalis
@@ -427,6 +469,12 @@ yaztalis:
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/yaztalis
+    - platform: Bluesky
+      url: https://bsky.app/profile/yaztalis.bsky.social
+    - platform: Twitter
+      url: https://twitter.com/Yaztalis
+    - platform: YouTube
+      url: https://www.youtube.com/@yaztalis
 
 amiliavt:
   name: AmiliaVT
@@ -434,6 +482,12 @@ amiliavt:
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/amiliavt
+    - platform: Twitter
+      url: https://twitter.com/AmiliaVT
+    - platform: TikTok
+      url: https://www.tiktok.com/@amiliavt
+    - platform: Instagram
+      url: https://www.instagram.com/amiliavt/
 
 baphostv:
   name: Bapho
@@ -441,34 +495,71 @@ baphostv:
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/baphostv
+    - platform: Twitter
+      url: https://twitter.com/BaphosTV
+    - platform: YouTube
+      url: https://www.youtube.com/@BaphosTV
+    - platform: TikTok
+      url: https://www.tiktok.com/@baphostv
 
 blakeprod:
   name: BlakeProd
-  country: '?'
+  country: CAN
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/blakeprod
+    - platform: Bluesky
+      url: https://bsky.app/profile/protoblake.bsky.social
+    - platform: Twitter
+      url: https://twitter.com/ProtoBlake
+
+blaqkcat:
+  name: BlaqkCat
+  country: USA
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/blaqkcat
+    - platform: Bluesky
+      url: https://blaqkcat.bsky.social/
+    - platform: Twitter
+      url: https://twitter.com/blaqkcat_
+    - platform: TikTok
+      url: https://www.tiktok.com/@blaqkcat
 
 dodgerakame:
   name: DodgerAkame
-  country: '?'
+  country: FRA
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/dodgerakame
+    - platform: Bluesky
+      url: https://bsky.app/profile/dodgerakame.bsky.social
+    - platform: Mastodon
+      url: https://meow.social/web/@DodgerAkame
+    - platform: YouTube
+      url: https://www.youtube.com/@DodgerAkame
+    - platform: TikTok
+      url: https://www.tiktok.com/@dodgerakame_twitch
 
 elzbietatv:
   name: ElzBietaTV
-  country: '?'
+  country: FRA
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/elzbietatv
+    - platform: YouTube
+      url: https://www.youtube.com/channel/UCdmUHFiiALX0ofz5x9f6qKA
 
 emarcanine:
   name: Emarcanine
-  country: '?'
+  country: FRA
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/emarcanine
+    - platform: Twitter
+      url: https://twitter.com/EmArcanine
+    - platform: TikTok
+      url: https://www.tiktok.com/@emarcanine
 
 endoku_chan:
   name: Endoku_Chan
@@ -476,20 +567,34 @@ endoku_chan:
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/endoku_chan
+    - platform: Twitter
+      url: https://twitter.com/Endoku_chan
+    - platform: YouTube
+      url: https://www.youtube.com/channel/UCNsr4i807k8jbibJmAOiQxA
+    - platform: TikTok
+      url: https://www.tiktok.com/@endoku
 
 esliane:
   name: Esliane
-  country: '?'
+  country: FRA
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/esliane
+    - platform: Twitter
+      url: https://twitter.com/Esliane_
+    - platform: TikTok
+      url: https://www.tiktok.com/@esliane_vt
+    - platform: Instagram
+      url: https://www.instagram.com/esliane_vt/
 
 extranumby:
   name: ExtraNumby
-  country: '?'
+  country: FRA
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/extranumby
+    - platform: Instagram
+      url: https://www.instagram.com/extranumby/?next=%2F
 
 foxyareku:
   name: FoxyAreku
@@ -497,6 +602,12 @@ foxyareku:
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/foxyareku
+    - platform: Bluesky
+      url: https://bsky.app/profile/foxyareku.live
+    - platform: YouTube
+      url: https://www.youtube.com/channel/UCCCkUCDYs1X2M_tkDgzKbXQ
+    - platform: TikTok
+      url: https://www.tiktok.com/@foxyareku
 
 hildamist:
   name: HildaMist
@@ -504,6 +615,10 @@ hildamist:
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/hildamist
+    - platform: Bluesky
+      url: https://bsky.app/profile/hildamist.vtubers.social
+    - platform: TikTok
+      url: https://www.tiktok.com/@hildamist
 
 ikutokami:
   name: IkutoKami
@@ -511,13 +626,25 @@ ikutokami:
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/ikutokami
+    - platform: Twitter
+      url: https://twitter.com/Ikuto_Kami
+    - platform: YouTube
+      url: https://www.youtube.com/@ikutokami3980
+    - platform: TikTok
+      url: https://www.tiktok.com/@ikutokami
 
 keola:
   name: Keola
-  country: '?'
+  country: FRA
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/keola
+    - platform: Twitter
+      url: https://twitter.com/KeolaKumaneko
+    - platform: YouTube
+      url: https://www.youtube.com/channel/UC3kt7D6IBIv16ije97tmzSw
+    - platform: TikTok
+      url: https://www.tiktok.com/@keolakumaneko
 
 kokore:
   name: Kokore
@@ -525,13 +652,23 @@ kokore:
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/kokore
+    - platform: Bluesky
+      url: https://bsky.app/profile/kokore.bsky.social
+    - platform: YouTube
+      url: https://www.youtube.com/channel/UCFUXlFPIgYGmsDOXrlQLwWA?view_as=subscriber
+    - platform: Instagram
+      url: https://www.instagram.com/kokore_42
 
 lechatoo:
   name: LeChatoo
-  country: '?'
+  country: CAN
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/lechatoo
+    - platform: Twitter
+      url: https://twitter.com/LeChatsake
+    - platform: TikTok
+      url: https://www.tiktok.com/@lechatoo
 
 lutzthakitten:
   name: LutzThaKitten
@@ -539,6 +676,10 @@ lutzthakitten:
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/lutzthakitten
+    # - platform: Twitter
+    #   url: https://twitter.com/ImLutz_
+    - platform: YouTube
+      url: https://www.youtube.com/channel/UC9unFdhEH8vAHG_cfugrv2Q
 
 malidoudou:
   name: MaliDoudou
@@ -546,6 +687,14 @@ malidoudou:
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/malidoudou
+    - platform: Bluesky
+      url: https://bsky.app/profile/malidoudou.vtubers.social
+    - platform: Twitter
+      url: https://x.com/Malidoudou_
+    - platform: YouTube
+      url: https://www.youtube.com/channel/UCGrjbPyrpnNKNrIIfIjzXIw
+    - platform: Instagram
+      url: https://www.instagram.com/malidoudou_twitch/?hl=fr
 
 manaryuujin:
   name: ManaRyuuJin
@@ -553,13 +702,25 @@ manaryuujin:
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/manaryuujin
+    - platform: Twitter
+      url: https://twitter.com/manaryuujin
+    - platform: YouTube
+      url: https://www.youtube.com/@manaryuujin
+    - platform: TikTok
+      url: https://www.tiktok.com/@mana_drg
+    - platform: Instagram
+      url: https://www.instagram.com/manaryuujin/
 
 masakifujiwara:
-  name: MasaFujiwara
-  country: '?'
+  name: Masaki Fujiwara
+  country: CAN
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/masakifujiwara
+    - platform: Twitter
+      url: https://twitter.com/masakifujiwa_ch
+    - platform: TikTok
+      url: https://www.tiktok.com/@masakifujiwara_ch
 
 mommysillica:
   name: MommySillica
@@ -567,6 +728,16 @@ mommysillica:
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/mommysillica
+    - platform: Twitter
+      url: https://twitter.com/MissSillica
+    - platform: YouTube
+      url: https://www.youtube.com/channel/UCAUdSYggqzAn-yonZaCx46w
+    - platform: TikTok
+      url: https://www.tiktok.com/@misssillica
+    - platform: Instagram
+      url: https://www.instagram.com/misssillica
+    - platform: Links
+      url: https://sillica.carrd.co/
 
 narcos_furry:
   name: Narcos_Furry
@@ -574,6 +745,8 @@ narcos_furry:
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/narcos_furry
+    - platform: Instagram
+      url: https://www.instagram.com/narcos_furry_twitch
 
 nia_c:
   name: Nia_C
@@ -581,6 +754,10 @@ nia_c:
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/nia_c
+    - platform: YouTube
+      url: https://www.youtube.com/channel/UCIEK4H3q-VcdQU_i9UBXcXg?sub_confirmation=1
+    - platform: TikTok
+      url: https://www.tiktok.com/@niatwitch
 
 nisumi:
   name: Nisumi
@@ -588,6 +765,10 @@ nisumi:
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/nisumi
+    - platform: Twitter
+      url: https://twitter.com/Nisumi_Art
+    - platform: Links
+      url: https://nisumii.carrd.co/
 
 peachypiwie:
   name: PeachyPiwie
@@ -595,20 +776,36 @@ peachypiwie:
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/peachypiwie
+    - platform: YouTube
+      url: https://www.youtube.com/@PeachyPiwie
 
 perceval_robin:
   name: Perceval Robin
-  country: '?'
+  country: FRA
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/perceval_robin
+    - platform: Bluesky
+      url: https://bsky.app/profile/percevalrobin.bsky.social
+    - platform: Twitter
+      url: https://twitter.com/Perceval_Robin
+    - platform: Instagram
+      url: https://www.instagram.com/perceval_robin
+    - platform: Links
+      url: https://percevalrobin.carrd.co/
 
 pheden:
   name: Pheden
-  country: '?'
+  country: BEL
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/pheden
+    - platform: Twitter
+      url: https://twitter.com/PhedenPossum
+    - platform: YouTube
+      url: https://www.youtube.com/@phedenvod
+    - platform: TikTok
+      url: https://www.tiktok.com/@phedenpossum
 
 plivecrocodile:
   name: Plivecrocodile
@@ -619,38 +816,90 @@ plivecrocodile:
 
 pocat:
   name: Pocat
-  country: '?'
+  country: SGP
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/pocat
+    - platform: Bluesky
+      url: https://bsky.app/profile/pocat.live
+    - platform: Twitter
+      url:
+    - platform: Mastodon
+      url:
+    - platform: YouTube
+      url: https://www.youtube.com/@pocatTF
+    - platform: TikTok
+      url: https://www.tiktok.com/@pocat_
+    - platform: Instagram
+      url:
+    - platform: Website
+      url:
+    - platform: Links
+      url:
 
 ponokichan:
-  name: PonoKichan
-  country: '?'
+  name: Ponoki Chan
+  country: FRA
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/ponokichan
+    - platform: Twitter
+      url: https://twitter.com/Ponoki_Chan
+    - platform: YouTube
+      url: https://www.youtube.com/@ponoki
+    - platform: TikTok
+      url: https://www.tiktok.com/@ponokichan
+    - platform: Instagram
+      url: https://www.instagram.com/ponokichan/
+    - platform: Website
+      url: https://www.ponoki.net/
+    - platform: Links
+      url: https://linktr.ee/ponoki
 
 ryuuna_vt:
   name: Ryuuna_VT
-  country: '?'
+  country: FRA
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/ryuuna_vt
+    - platform: Twitter
+      url: https://x.com/ryuuna_vt
+    - platform: YouTube
+      url: https://www.youtube.com/@ryuuna_vt
+    - platform: TikTok
+      url: https://www.tiktok.com/@ryuuna_vt
+    - platform: Website
+      url: https://ryuuna-miokatsu.com/
 
 shalinka:
   name: Shalinka
-  country: '?'
+  country: FRA
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/shalinka
+    - platform: Bluesky
+      url: https://bsky.app/profile/shalinka.bsky.social
+    - platform: Twitter
+      url: https://twitter.com/shalinkarts
+    - platform: Facebook
+      url: https://www.facebook.com/Shalinkarts
+    - platform: Instagram
+      url: https://www.instagram.com/shalinkarts/
+    - platform: Website
+      url: https://shalinka.net/
+    - platform: Links
+      url: https://shalinka.carrd.co/
 
 shiholitchi:
   name: Shiholitchi
-  country: '?'
+  country: FRA
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/shiholitchi
+    - platform: Twitter
+      url: https://twitter.com/ShihoLitchi
+    - platform: TikTok
+      url: https://www.tiktok.com/@shiholitchi
 
 sol_hms:
   name: Sol_Hms
@@ -658,20 +907,38 @@ sol_hms:
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/sol_hms
+    - platform: Twitter
+      url: https://twitter.com/sol_hms
+    - platform: YouTube
+      url: https://www.youtube.com/@solhmsYT
+    - platform: TikTok
+      url: https://www.tiktok.com/@sol_hms
 
 spica_stellaris:
   name: Spica Stellaris
-  country: '?'
+  country: FRA
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/spica_stellaris
+    - platform: Twitter
+      url: https://twitter.com/spica_stellaris
+    - platform: TikTok
+      url: https://www.tiktok.com/@spica_stellaris
 
 sumashu:
   name: SumaShu
-  country: '?'
+  country: FRA
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/sumashu
+    - platform: Twitter
+      url: https://twitter.com/Sumashu
+    - platform: YouTube
+      url: https://www.youtube.com/@Sumashu
+    - platform: TikTok
+      url: https://www.tiktok.com/@sumashuyt
+    - platform: Instagram
+      url: https://www.instagram.com/sumashuyt/
 
 takudev:
   name: TakuDev
@@ -679,6 +946,18 @@ takudev:
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/takudev
+    - platform: Twitter
+      url: https://twitter.com/jojo58fr
+    - platform: YouTube
+      url: https://www.youtube.com/channel/@takudev
+    - platform: TikTok
+      url: https://www.tiktok.com/@takudev
+    - platform: Instagram
+      url: https://www.instagram.com/joachim.miens
+    - platform: GitHub
+      url: http://github.com/jojo58fr
+    - platform: Website
+      url: https://www.takudev.com/
 
 the_skinwalkers:
   name: The_SkinWalkers
@@ -686,13 +965,27 @@ the_skinwalkers:
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/the_skinwalkers
+    - platform: Bluesky
+      url: https://bsky.app/profile/theskinwalkers.bsky.social
+    - platform: Twitter
+      url: https://twitter.com/The_Skinwalkers
+    - platform: YouTube
+      url: https://www.youtube.com/channel/UCKfXf0mDgejAWsXIsfuj7og
+    - platform: TikTok
+      url: https://www.tiktok.com/@skinwalkers_vtuber
 
 the_turboyoyo:
   name: The_TurboYoyo
-  country: '?'
+  country: FRA
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/the_turboyoyo
+    - platform: Twitter
+      url: https://twitter.com/The_Turboyoyo
+    - platform: YouTube
+      url: https://www.youtube.com/channel/UCc5XHroRbnTkOH1NvanamyA
+    - platform: TikTok
+      url: https://www.tiktok.com/@_theturboyoyo
 
 volpoune:
   name: Volpoune
@@ -700,13 +993,27 @@ volpoune:
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/volpoune
+    - platform: Instagram
+      url: https://www.instagram.com/volpoune/
 
 yhusky_kun:
   name: YHusky_Kun
-  country: '?'
+  country: FRA
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/yhusky_kun
+    - platform: Bluesky
+      url: https://bsky.app/profile/yhusky.bsky.social
+    - platform: Twitter
+      url: https://twitter.com/yhusky_kun
+    - platform: YouTube
+      url: https://www.youtube.com/@yhusky_kun
+    - platform: TikTok
+      url: https://www.tiktok.com/@yhusky_kun
+    - platform: Instagram
+      url: https://www.instagram.com/yhusky_kun
+    - platform: Links
+      url: https://yhusky.carrd.co/
 
 yuiicky:
   name: Yuiicky
@@ -714,3 +1021,9 @@ yuiicky:
   socials:
     - platform: Twitch
       url: https://www.twitch.tv/yuiicky
+    - platform: Twitter
+      url: https://twitter.com/Yuiicky
+    - platform: Instagram
+      url: https://www.instagram.com/yuiicky/?theme=dark
+    - platform: Links
+      url: https://yuicky.straw.page/
