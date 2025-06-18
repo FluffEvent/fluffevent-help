@@ -1,4 +1,5 @@
 ---
+import { record } from 'astro:schema'
 import YAML from 'yaml'
 
 import CountryFlag from '~/components/CountryFlag.astro'
@@ -19,7 +20,21 @@ const streamersList = YAML.parse(streamersListYml) as Array<string>
 const streamersSocials = YAML.parse(streamersSocialsYml) as Record<string, StreamerSocials>
 
 const streamers: Array<StreamerSocials> = streamersList.map(
-	(name) => streamersSocials[name] || { name, country: '?', socials: [] }
+	(name) =>
+	{
+		const streamer = streamersSocials[name]
+
+		if (!streamer)
+		{
+			return { name, country: '?', socials: [] }
+		}
+
+		streamer.socials = streamer.socials.filter(
+			(social) => social.platform && social.url
+		)
+
+		return streamer
+	}
 )
 ---
 
@@ -41,7 +56,7 @@ const streamers: Array<StreamerSocials> = streamersList.map(
 				</td>
 				<td>{streamer.name}</td>
 				<td>
-					{streamer.socials?.map((social, index) => (
+					{streamer.socials.map((social, index) => (
 						<>
 							<a href={social.url} target="_blank" rel="noopener noreferrer">{
 								}<SocialPlatformIcon platform={social.platform} />{
