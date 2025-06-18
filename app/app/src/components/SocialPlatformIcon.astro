@@ -7,6 +7,8 @@ type SocialPlatform =
 	| 'youtube' // YouTube
 	| 'tiktok' // TikTok
 	| 'instagram' // Instagram
+	| 'website' // Website
+	| 'links' // Links
 
 function parseSocialPlatform(code: any): string | undefined
 {
@@ -31,6 +33,8 @@ const socialPlatform: SocialPlatform | undefined = parseSocialPlatform(Astro.pro
 		? <span class="icon-[ic--baseline-tiktok] icon-align icon-fw"></span>
 	: socialPlatform === 'instagram'
 		? <span class="icon-[mdi--instagram] icon-align icon-fw"></span>
+	: socialPlatform === 'website'
+		? <span class="icon-[mdi--web] icon-align icon-fw"></span>
 	: socialPlatform === 'links'
 		? <span class="icon-[mdi--link] icon-align icon-fw"></span>
 	:
