@@ -449,6 +449,19 @@ blakeprod:
     - platform: Twitch
       url: https://www.twitch.tv/blakeprod
 
+blaqkcat:
+  name: BlaqkCat
+  country: USA
+  socials:
+    - platform: Twitch
+      url: https://www.twitch.tv/blaqkcat
+    - platform: Bluesky
+      url: https://blaqkcat.bsky.social/
+    - platform: Twitter
+      url: https://twitter.com/blaqkcat_
+    - platform: TikTok
+      url: https://www.tiktok.com/@blaqkcat
+
 dodgerakame:
   name: DodgerAkame
   country: '?'
