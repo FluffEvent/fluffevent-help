@@ -1,12 +1,22 @@
 ---
-import { record } from 'astro:schema'
 import YAML from 'yaml'
 
 import CountryFlag from '~/components/CountryFlag.astro'
 import SocialPlatformIcon from '~/components/SocialPlatformIcon.astro'
 import streamersSocialsYml from '~/data/streamers/socials.yml?raw'
 
-interface StreamerSocials {
+interface YamlStreamerSocials
+{
+	name: string
+	country: string
+	socials: Array<{
+		platform: string
+		url: string
+	}> | null
+}
+
+interface StreamerSocials
+{
 	name: string
 	country: string
 	socials: Array<{
@@ -17,23 +27,32 @@ interface StreamerSocials {
 
 const { streamersListYml = '[]' } = Astro.props
 const streamersList = YAML.parse(streamersListYml) as Array<string>
-const streamersSocials = YAML.parse(streamersSocialsYml) as Record<string, StreamerSocials>
+const streamersSocials = YAML.parse(streamersSocialsYml) as Record<string, YamlStreamerSocials>
 
 const streamers: Array<StreamerSocials> = streamersList.map(
-	(name) =>
+	(name): StreamerSocials =>
 	{
 		const streamer = streamersSocials[name]
 
 		if (!streamer)
 		{
-			return { name, country: '?', socials: [] }
+			return {
+				name: name,
+				country: '?',
+				socials: [],
+			}
 		}
 
-		streamer.socials = streamer.socials.filter(
-			(social) => social.platform && social.url
-		)
-
-		return streamer
+		return {
+			name: streamer.name,
+			country: streamer.country,
+			socials: (streamer.socials || []).map(
+				(social) => ({
+					platform: social.platform.toLowerCase(),
+					url: social.url
+				})
+			)
+		}
 	}
 )
 ---
