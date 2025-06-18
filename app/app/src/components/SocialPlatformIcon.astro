@@ -31,6 +31,8 @@ const socialPlatform: SocialPlatform | undefined = parseSocialPlatform(Astro.pro
 		? <span class="icon-[ic--baseline-tiktok] icon-align icon-fw"></span>
 	: socialPlatform === 'instagram'
 		? <span class="icon-[mdi--instagram] icon-align icon-fw"></span>
+	: socialPlatform === 'links'
+		? <span class="icon-[mdi--link] icon-align icon-fw"></span>
 	:
 		<em>{socialPlatform}</em>
 }
