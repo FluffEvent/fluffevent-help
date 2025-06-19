@@ -27,7 +27,8 @@ Le montant de la cagnotte enregistré à la fin de l'événement en direct est d
 
 ### À la fermeture de la boutique en ligne
 
-Le montant de la cagnotte enregistré à la fermeture de la boutique en ligne est de **32 077 €**, dont :
+Le montant de la cagnotte enregistré à la fermeture de la boutique en ligne est de **32 077 €**,
+dont :
 - **30 749 €** de dons directs à l'association soutenue **En Avant Toute(s)**,
 - **1 328 €** de dons issus de la boutique en ligne de l'événement.
 
@@ -37,23 +38,30 @@ Le montant de la cagnotte enregistré à la fermeture de la boutique en ligne es
 <details>
 <summary>Comment est calculée la cagnotte ?</summary>
 
-La cagnotte est calculée à partir des dons effectués sur **Streamlabs Charity** pendant l'événement, ainsi que des **bénéfices de la boutique** en ligne de l'événement. Elle est mise à jour en quasi temps réel pendant l'événement.
+La cagnotte est calculée à partir des dons effectués sur **Streamlabs Charity** pendant
+l'événement, ainsi que des **bénéfices de la boutique** en ligne de l'événement. Elle est mise à
+jour en quasi temps réel pendant l'événement.
 
 </details>
 
 <details>
 <summary>Où peut-on voir la cagnotte ?</summary>
 
-Le montant de la cagnotte est affiché en quasi temps réel **sur le site de l'événement** ([fluffevent.fr](https://fluffevent.fr)). Pendant l'événement en direct, il est également affiché dans le flux vidéo des chaînes Twitch des participants en diffusion !
+Le montant de la cagnotte est affiché en quasi temps réel **sur le site de l'événement**
+([fluffevent.fr](https://fluffevent.fr)). Pendant l'événement en direct, il est également affiché
+dans le flux vidéo des chaînes Twitch des participants en diffusion !
 
 </details>
 
 <details>
 <summary>Quand la cagnotte se termine-t-elle ?</summary>
 
-La cagnotte ne se termine réellement qu'**à la clôture de l'exercice financier de l'événement**, une fois tous les dons et bénéfices pour l'association soutenue **En Avant Toute(s)** comptabilisés.
+La cagnotte ne se termine réellement qu'**à la clôture de l'exercice financier de l'événement**,
+une fois tous les dons et bénéfices pour l'association soutenue **En Avant Toute(s)**
+comptabilisés.
 
-En attendant, la cagnotte continue d'être mise à jour et ses montants sont partagés sur les réseaux sociaux de l'événement à des moments clés.
+En attendant, la cagnotte continue d'être mise à jour et ses montants sont partagés sur les réseaux
+sociaux de l'événement à des moments clés.
 
 </details>
 
@@ -66,7 +74,8 @@ Les montants de la cagnotte sont observés et partagés à ces moments clés :
 - À la fermeture de la boutique en ligne.
 - À la clôture de l'exercice comptable de l'événement.
 
-Le partage de ces montants est effectué sur les réseaux sociaux de l'événement pour engager la communauté et les informer des progrès de la cagnotte.
+Le partage de ces montants est effectué sur les réseaux sociaux de l'événement pour engager la
+communauté et les informer des progrès de la cagnotte.
 
 </details>
 
@@ -95,7 +104,8 @@ Le montant observé à ce moment là inclut :
 <details>
 <summary>Quand est "la clôture de l'exercice comptable de l'événement" ?</summary>
 
-La clôture de l'exercice comptable de l'événement sera fixée lorsque toutes les livraisons de la boutique en ligne seront effectuées.
+La clôture de l'exercice comptable de l'événement sera fixée lorsque toutes les livraisons de la
+boutique en ligne seront effectuées.
 
 Le montant observé à ce moment là inclut :
 - les dons directs sur Streamlabs Charity,
