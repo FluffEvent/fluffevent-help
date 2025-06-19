@@ -5,10 +5,16 @@ title: Cagnotte Fluff Event 2025
 ## État actuel de la cagnotte
 
 Le montant de la cagnotte enregistré à la fermeture de la boutique en ligne est de **32 077 €** !
+Ce montant inclut 30 749 € de dons directs à l'association soutenue **En Avant Toute(s)** et 1 328
+€ de dons issus de la boutique en ligne.
 
-Depuis le 16 juin 2025, l'événement en direct est terminé et la boutique en ligne a fermé. La cagnotte pourra à nouveau être mise à jour à la clôture de l'exercice comptable de l'événement, une fois tous les dons et bénéfices pour l'association soutenue **En Avant Toute(s)** comptabilisés.
+Ce montant a été observé le 16 juin 2025, date depuis laquelle l'événement en direct est terminé et
+la boutique en ligne a fermé. La cagnotte pourra à nouveau être mise à jour lors de la clôture de
+l'exercice comptable de l'événement, une fois tous les dons et bénéfices pour l'association
+soutenue comptabilisés.
 
-Vous pouvez trouvez la cagnotte mise à jour en temps réel et d'autres informations sur le site de l'événement : [fluffevent.fr](https://fluffevent.fr).
+Vous pouvez trouvez la cagnotte mise à jour en temps réel et d'autres informations sur le site de
+l'événement : [fluffevent.fr](https://fluffevent.fr).
 
 
 ## Détails de la cagnotte
@@ -16,13 +22,13 @@ Vous pouvez trouvez la cagnotte mise à jour en temps réel et d'autres informat
 ### À la fin de l'événement en direct
 
 Le montant de la cagnotte enregistré à la fin de l'événement en direct est de **31 477 €**, dont :
-- **30 641 €** de dons directs à l'association **En Avant Toute(s)**,
+- **30 641 €** de dons directs à l'association soutenue **En Avant Toute(s)**,
 - **836 €** de dons issus de la boutique en ligne de l'événement.
 
 ### À la fermeture de la boutique en ligne
 
 Le montant de la cagnotte enregistré à la fermeture de la boutique en ligne est de **32 077 €**, dont :
-- **30 749 €** de dons directs à l'association **En Avant Toute(s)**,
+- **30 749 €** de dons directs à l'association soutenue **En Avant Toute(s)**,
 - **1 328 €** de dons issus de la boutique en ligne de l'événement.
 
 
