@@ -25,6 +25,7 @@ export default defineConfig({
 				},
 			},
 			social: [
+				{ icon: 'twitter', label: 'Twitter', href: 'https://twitter.com/FluffEvent' },
 				{ icon: 'telegram', label: 'Telegram', href: 'https://t.me/FluffEventNews' },
 				{ icon: 'discord', label: 'Discord', href: 'https://discord.com/invite/rAesnJHuPe' },
 				{ icon: 'github', label: 'GitHub', href: 'https://github.com/FluffEvent/fluffevent-help' },
