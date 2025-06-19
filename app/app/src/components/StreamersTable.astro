@@ -5,6 +5,14 @@ import CountryFlag from '~/components/CountryFlag.astro'
 import SocialPlatformIcon from '~/components/SocialPlatformIcon.astro'
 import streamersSocialsYml from '~/data/streamers/socials.yml?raw'
 
+interface YamlStreamerList
+{
+	teams: Record<string, string>
+	streamers: Record<string, {
+		team: string
+	} | null>
+}
+
 interface YamlStreamerSocials
 {
 	name: string
@@ -19,14 +27,36 @@ interface StreamerSocials
 {
 	name: string
 	country: string
+	team?: string | null
 	socials: Array<{
 		platform: string
 		url: string
 	}>
 }
 
-const { streamersListYml = '[]' } = Astro.props
-const streamersList = YAML.parse(streamersListYml) as Array<string>
+function parseStreamerList(streamersListYml: string): YamlStreamerList
+{
+	const streamersList = YAML.parse(streamersListYml)
+
+	if (Array.isArray(streamersList))
+	{
+		return {
+			teams: {},
+			streamers: streamersList.reduce(
+				(acc, name) => ({ ...acc, [name]: null }),
+				{} as Record<string, { team: string } | null>
+			),
+		}
+	}
+
+	return streamersList as YamlStreamerList
+}
+
+const {
+	streamersListYml = '[]',
+	showTeams = false,
+} = Astro.props
+const streamersList = parseStreamerList(streamersListYml)
 const streamersSocials = YAML.parse(streamersSocialsYml) as Record<string, YamlStreamerSocials>
 
 const socialPlatforms = [
@@ -39,8 +69,8 @@ const socialPlatforms = [
 	'links',
 ]
 
-const streamers: Array<StreamerSocials> = streamersList.map(
-	(name): StreamerSocials =>
+const streamers: Array<StreamerSocials> = Object.entries(streamersList.streamers).map(
+	([name, data]): StreamerSocials =>
 	{
 		const streamer = streamersSocials[name]
 
@@ -56,6 +86,7 @@ const streamers: Array<StreamerSocials> = streamersList.map(
 		return {
 			name: streamer.name,
 			country: streamer.country,
+			...(showTeams && { team: data?.team ? streamersList.teams[data.team] : null }),
 			socials: socialPlatforms.reduce(
 				(socials, platform) =>
 				{
@@ -71,7 +102,7 @@ const streamers: Array<StreamerSocials> = streamersList.map(
 					return socials
 				},
 				[] as StreamerSocials['socials'],
-			)
+			),
 		}
 	}
 )
@@ -83,6 +114,7 @@ const streamers: Array<StreamerSocials> = streamersList.map(
 		<tr>
 			<th><span class="sr-only">Nationalité</span></th>
 			<th>Participant</th>
+			{showTeams && <th>Équipe</th>}
 			<th>Réseaux sociaux</th>
 		</tr>
 	</thead>
@@ -94,6 +126,7 @@ const streamers: Array<StreamerSocials> = streamersList.map(
 					<CountryFlag country={streamer.country} />
 				</td>
 				<td>{streamer.name}</td>
+				{showTeams && <td>{streamer.team || '–'}</td>}
 				<td>
 					{streamer.socials.map((social, index) => (
 						<>
