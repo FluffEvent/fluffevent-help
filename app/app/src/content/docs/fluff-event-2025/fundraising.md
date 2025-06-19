@@ -21,16 +21,24 @@ l'événement : [fluffevent.fr](https://fluffevent.fr).
 
 ### À la fin de l'événement en direct
 
+<!-- Cagnotte intermédiaire -->
+
 Le montant de la cagnotte enregistré à la fin de l'événement en direct est de **31 477 €**, dont :
 - **30 641 €** de dons directs à l'association soutenue **En Avant Toute(s)**,
 - **836 €** de dons issus de la boutique en ligne de l'événement.
 
 ### À la fermeture de la boutique en ligne
 
+<!-- Cagnotte finale -->
+
 Le montant de la cagnotte enregistré à la fermeture de la boutique en ligne est de **32 077 €**,
 dont :
 - **30 749 €** de dons directs à l'association soutenue **En Avant Toute(s)**,
 - **1 328 €** de dons issus de la boutique en ligne de l'événement.
+
+<!-- ### À la clôture de l'exercice comptable de l'événement -->
+
+<!-- Cagnotte réelle -->
 
 
 ## FAQ
