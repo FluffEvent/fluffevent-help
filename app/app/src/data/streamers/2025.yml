@@ -1,7 +1,6 @@
 teams:
   knights: Knights
   magicians: Magicians
-  no_team: No Team
 
 streamers:
   amiliavt: { "team": "knights" }
@@ -9,7 +8,7 @@ streamers:
   azeleneuf: { "team": "knights" }
   baphostv: { "team": "magicians" }
   blakeprod: { "team": "knights" }
-  blaqkcat: { "team": "no_team" }
+  blaqkcat: { "team": null }
   dodgerakame: { "team": "knights" }
   drakelelionblanc: { "team": "magicians" }
   elzbietatv: { "team": "knights" }
@@ -17,15 +16,15 @@ streamers:
   endoku_chan: { "team": "magicians" }
   esliane: { "team": "knights" }
   extranumby: { "team": "magicians" }
-  fluffylepandaroux: { "team": "magicians" }
-  foxyareku: { "team": "no_team" }
-  furody_fur: { "team": "magicians" }
+  fluffy: { "team": "magicians" }
+  foxyareku: { "team": null }
+  furo: { "team": "magicians" }
   hildamist: { "team": "knights" }
   ikutokami: { "team": "knights" }
   keola: { "team": "knights" }
   kokore: { "team": "magicians" }
   lechatoo: { "team": "knights" }
-  luiroilefuret: { "team": "knights" }
+  luiroi: { "team": "knights" }
   lutzthakitten: { "team": "magicians" }
   malidoudou: { "team": "knights" }
   manaryuujin: { "team": "magicians" }
@@ -38,13 +37,13 @@ streamers:
   perceval_robin: { "team": "knights" }
   pheden: { "team": "knights" }
   plivecrocodile: { "team": "magicians" }
-  pocat: { "team": "no_team" }
+  pocat: { "team": null }
   ponokichan: { "team": "magicians" }
   ryuuna_vt: { "team": "magicians" }
   shalinka: { "team": "knights" }
   shiholitchi: { "team": "magicians" }
   sol_hms: { "team": "magicians" }
-  spaceyeen: { "team": "no_team" }
+  spaceyeen: { "team": null }
   spica_stellaris: { "team": "magicians" }
   stanrenart: { "team": "knights" }
   sumashu: { "team": "magicians" }
