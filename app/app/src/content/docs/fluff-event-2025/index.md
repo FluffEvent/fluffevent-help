@@ -10,11 +10,11 @@ L'événement vise à collecter des fonds pour l'association
 [**En Avant Toute(s)**](https://enavanttoutes.fr/), qui lutte pour l'égalité de genre et la fin des
 violences sexistes et sexuelles.
 
-Plusieurs participants de nationalités différentes ont participé à cet événement et engagé leurs
-spectateurs pour cette cause !
+**51 participants** de nationalités différentes ont participé pour engager leur communauté dans cet
+événement de **54 heures**, qui a permis de récolter **32 077 €** pour l'association soutenue.
 
-Les fonds sont récoltés grâce aux dons des spectateurs et aux bénéfices des ventes de produits
-dérivés sur la boutique en ligne exclusive de l'événement.
+Les fonds sont récoltés grâce aux dons directs des spectateurs et aux bénéfices issus des ventes de
+produits dérivés sur la boutique en ligne de l'événement.
 
 
 #### Activités
