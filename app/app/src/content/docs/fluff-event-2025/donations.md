@@ -127,4 +127,6 @@ pouvez contacter l'association à l'adresse [dons@enavanttoutes.fr](mailto:dons@
 
 </details>
 
-Pour toute autre question ou problème sur lequel nous pouvons vous aider, n'hésitez pas à nous contacter par e-mail à [contact@fluffevent.fr](mailto:contact@fluffevent.fr), ou en ouvrant un ticket sur notre [Discord](https://discord.com/invite/rAesnJHuPe).
+Pour toute autre question ou problème sur lequel nous pouvons vous aider, n'hésitez pas à nous
+contacter par e-mail à [contact@fluffevent.fr](mailto:contact@fluffevent.fr), ou en ouvrant un
+ticket sur notre [Discord](https://discord.com/invite/rAesnJHuPe).
