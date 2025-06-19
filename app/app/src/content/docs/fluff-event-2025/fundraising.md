@@ -38,9 +38,8 @@ dont :
 <details>
 <summary>Comment est calculée la cagnotte ?</summary>
 
-La cagnotte est calculée à partir des dons effectués sur **Streamlabs Charity** pendant
-l'événement, ainsi que des **bénéfices de la boutique** en ligne de l'événement. Elle est mise à
-jour en quasi temps réel pendant l'événement.
+La cagnotte est calculée à partir des dons directs effectués sur **Streamlabs Charity** pendant
+l'événement, ainsi que des dons issus des achats sur la **boutique en ligne** de l'événement.
 
 </details>
 
@@ -54,14 +53,25 @@ dans le flux vidéo des chaînes Twitch des participants en diffusion !
 </details>
 
 <details>
+<summary>À quelle fréquence est mise à jour la cagnotte ?</summary>
+
+La cagnotte est mise à jour en **quasi temps réel**. Elle est la somme de deux compteurs :
+
+- celui des dons directs, mis à jour en **temps réel**,
+- celui des dons issus des achats, mis à jour toutes les **15 à 30 minutes**.
+
+</details>
+
+<details>
 <summary>Quand la cagnotte se termine-t-elle ?</summary>
 
-La cagnotte ne se termine réellement qu'**à la clôture de l'exercice financier de l'événement**,
-une fois tous les dons et bénéfices pour l'association soutenue **En Avant Toute(s)**
-comptabilisés.
+La cagnotte de l'événement se termine officiellement **à la fermeture de la boutique en ligne**,
+une fois tous les dons directs et issus de la boutique comptabilisés.
 
-En attendant, la cagnotte continue d'être mise à jour et ses montants sont partagés sur les réseaux
-sociaux de l'événement à des moments clés.
+Néanmoins, une cagnotte réelle est calculée plus tard, à la clôture de l'exercice comptable de
+l'événement. Celle-ci inclut également tous les dons, ainsi que les bénéfices exceptionnels
+comptabilisés après la fin des livraisons de la boutique en ligne qui seront reversés à
+l'association soutenue **En Avant Toute(s)**.
 
 </details>
 
