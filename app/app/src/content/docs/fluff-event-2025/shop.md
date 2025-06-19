@@ -2,11 +2,11 @@
 title: Boutique Fluff Event 2025
 ---
 
-:::note[Une question ou un problème ?]
+:::note[Un problème ou besoin d'aide ?]
 
-Pour toute question ou problème personnel avec votre commande, vous pouvez nous contacter de
-manière privée par e-mail à l'adresse [shop@fluffevent.fr](mailto:shop@fluffevent.fr). Nous vous
-répondrons dès que possible.
+Pour toute question ou problème lié à votre achat ou des informations personnelles, vous pouvez
+nous contacter de manière privée par e-mail à l'adresse
+[shop@fluffevent.fr](mailto:shop@fluffevent.fr). Nous vous répondrons dès que possible.
 
 :::
 
@@ -67,3 +67,10 @@ Pour cet événement, 9 produits dérivés sont proposés à la vente dans la bo
 ## FAQ
 
 ...
+
+Pour toute autre question ou problème non personnel sur lequel nous pouvons vous aider, n'hésitez
+pas à nous contacter par e-mail à [contact@fluffevent.fr](mailto:contact@fluffevent.fr), ou en
+ouvrant un ticket sur notre [Discord](https://discord.com/invite/rAesnJHuPe).
+
+Pour tout problème ou question lié à votre achat ou des informations personnelles, préférez nous
+contacter de manière privée par e-mail à l'adresse [shop@fluffevent.fr](mailto:shop@fluffevent.fr).
