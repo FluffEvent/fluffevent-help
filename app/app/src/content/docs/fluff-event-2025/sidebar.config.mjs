@@ -29,9 +29,9 @@ const sidebar = [
 		},
 		items: [
 			{
-				label: 'Dons',
+				label: 'Dons directs',
 				translations: {
-					en: 'Donations',
+					en: 'Direct Donations',
 				},
 				slug: 'fluff-event-2025/donations',
 			},

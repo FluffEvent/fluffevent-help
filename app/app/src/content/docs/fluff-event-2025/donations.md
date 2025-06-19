@@ -1,5 +1,5 @@
 ---
-title: Dons Fluff Event 2025
+title: Dons directs Fluff Event 2025
 ---
 
 ## Informations
