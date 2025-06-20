@@ -1,6 +1,6 @@
 teams:
-  knights: Knights
-  magicians: Magicians
+  knights: ⚔️ Knights
+  magicians: 🪄 Magicians
 
 streamers:
   amiliavt: { "team": "knights" }
