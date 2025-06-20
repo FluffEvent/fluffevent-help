@@ -1,51 +1,56 @@
-- amiliavt
-- atomicbraven
-- azeleneuf
-- baphostv
-- blakeprod
-- blaqkcat
-- dodgerakame
-- drakelelionblanc
-- elzbietatv
-- emarcanine
-- endoku_chan
-- esliane
-- extranumby
-- fluffy
-- foxyareku
-- furo
-- hildamist
-- ikutokami
-- keola
-- kokore
-- lechatoo
-- luiroi
-- lutzthakitten
-- malidoudou
-- manaryuujin
-- masakifujiwara
-- mommysillica
-- narcos_furry
-- nia_c
-- nisumi
-- peachypiwie
-- perceval_robin
-- pheden
-- plivecrocodile
-- pocat
-- ponokichan
-- ryuuna_vt
-- shalinka
-- shiholitchi
-- sol_hms
-- spaceyeen
-- spica_stellaris
-- stanrenart
-- sumashu
-- takudev
-- the_skinwalkers
-- the_turboyoyo
-- umbreonoctie
-- volpoune
-- yhusky_kun
-- yuiicky
+teams:
+  knights: ⚔️ Knights
+  magicians: 🪄 Magicians
+
+streamers:
+  amiliavt: { "team": "knights" }
+  atomicbraven: { "team": "knights" }
+  azeleneuf: { "team": "knights" }
+  baphostv: { "team": "magicians" }
+  blakeprod: { "team": "knights" }
+  blaqkcat: { "team": null }
+  dodgerakame: { "team": "knights" }
+  drakelelionblanc: { "team": "magicians" }
+  elzbietatv: { "team": "knights" }
+  emarcanine: { "team": "knights" }
+  endoku_chan: { "team": "magicians" }
+  esliane: { "team": "knights" }
+  extranumby: { "team": "magicians" }
+  fluffy: { "team": "magicians" }
+  foxyareku: { "team": null }
+  furo: { "team": "magicians" }
+  hildamist: { "team": "knights" }
+  ikutokami: { "team": "knights" }
+  keola: { "team": "knights" }
+  kokore: { "team": "magicians" }
+  lechatoo: { "team": "knights" }
+  luiroi: { "team": "knights" }
+  lutzthakitten: { "team": "magicians" }
+  malidoudou: { "team": "knights" }
+  manaryuujin: { "team": "magicians" }
+  masakifujiwara: { "team": "knights" }
+  mommysillica: { "team": "magicians" }
+  narcos_furry: { "team": "knights" }
+  nia_c: { "team": "knights" }
+  nisumi: { "team": "knights" }
+  peachypiwie: { "team": "magicians" }
+  perceval_robin: { "team": "knights" }
+  pheden: { "team": "knights" }
+  plivecrocodile: { "team": "magicians" }
+  pocat: { "team": null }
+  ponokichan: { "team": "magicians" }
+  ryuuna_vt: { "team": "magicians" }
+  shalinka: { "team": "knights" }
+  shiholitchi: { "team": "magicians" }
+  sol_hms: { "team": "magicians" }
+  spaceyeen: { "team": null }
+  spica_stellaris: { "team": "magicians" }
+  stanrenart: { "team": "knights" }
+  sumashu: { "team": "magicians" }
+  takudev: { "team": "knights" }
+  the_skinwalkers: { "team": "magicians" }
+  the_turboyoyo: { "team": "magicians" }
+  umbreonoctie: { "team": "magicians" }
+  volpoune: { "team": "magicians" }
+  yhusky_kun: { "team": "knights" }
+  yuiicky: { "team": "magicians" }
