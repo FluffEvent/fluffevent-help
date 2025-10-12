@@ -19,16 +19,16 @@ const sidebar = [
 		slug: 'fluff-event',
 	},
 	{
-		label: 'Fluff Event 2023',
-		slug: 'fluff-event-2023',
+		label: 'Fluff Event 2025',
+		slug: 'fluff-event-2025',
 	},
 	{
 		label: 'Fluff Event 2024',
 		slug: 'fluff-event-2024',
 	},
 	{
-		label: 'Fluff Event 2025',
-		slug: 'fluff-event-2025',
+		label: 'Fluff Event 2023',
+		slug: 'fluff-event-2023',
 	},
 ]
 
