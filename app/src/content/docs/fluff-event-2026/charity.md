@@ -91,7 +91,7 @@ Il est attendu que les participants fassent preuve de solidarité collective en 
 
 Le participant aura eu l'occasion d'exprimer sa désapprobation au cours du processus de sélection.
 
-Si malgré cela, un participant désapprouve le résultat du vote des communautés, il peut tout à fait se désister de l'événement. Il devra annoncer son désistement à la direction de l'événement. Les raisons de ce désistement pourront être démandés mais ne seront pas contestées ; le participant devra néanmoins ne pas dénigrer l'association soutenue, l'événement ou les autres participants.
+Si malgré cela, un participant désapprouve le résultat du vote des communautés, il peut tout à fait se désister de l'événement. Il devra annoncer son désistement à la direction de l'événement. Les raisons de ce désistement pourront être demandées mais ne seront pas contestées ; le participant devra néanmoins ne pas dénigrer l'association soutenue, l'événement ou les autres participants.
 
 </details>
 
