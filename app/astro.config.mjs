@@ -14,7 +14,7 @@ export default defineConfig({
 			title: 'Fluff Event Help',
 			description: 'Help and documentation for Fluff Event',
 			editLink: {
-				baseUrl: 'https://github.com/FluffEvent/fluffevent-help/edit/main/app/app/',
+				baseUrl: 'https://github.com/FluffEvent/fluffevent-help/edit/main/app/',
 			},
 			// Sidebar is overridden in this project
 			// Set config to empty here to avoid useless computation
