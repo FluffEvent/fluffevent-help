@@ -14,12 +14,17 @@ services:
       - ./app/dist:/dist
 
   app:
+    # Extend
+    extends:
+      file: ./docker-compose.yml
+      service: app
     # Build override
     image: ${IMAGES_PREFIX:-app}-cicd:${IMAGES_TAG:-latest}
     build:
       target: app_prod_build
       args:
         UID: ${DOCKER_UID:-${UID:-1000}}
+        BUILD_CHECK: ${BUILD_CHECK:-false}
     # Deploy override
     depends_on:
       app-volumes:
