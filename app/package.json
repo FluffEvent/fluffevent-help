@@ -10,11 +10,12 @@
     "start": "astro dev",
     "check": "astro check --tsconfig tsconfig.prod.json",
     "build-only": "astro build",
-    "build": "npm run check && npm run build-only",
+    "build": "pnpm run check && pnpm run build-only",
     "astro": "astro",
     "astro:sync": "astro sync",
     "astro:preview": "astro preview",
-    "deps:update": "pnpx -- npm-check-updates -t semver -u && pnpm i"
+    "test:vitest": "vitest run",
+    "test:playwright": "playwright test"
   },
   "repository": {
     "type": "git",
@@ -49,5 +50,9 @@
     "overrides": {
       "volar-service-emmet@0.0.66": "0.0.67"
     }
+  },
+  "imports": {
+    "#global.css": "./src/styles/global.css",
+    "#tailwind.css": "./src/styles/tailwind.css"
   }
 }
