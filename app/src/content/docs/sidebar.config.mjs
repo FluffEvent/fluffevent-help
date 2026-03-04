@@ -23,16 +23,24 @@ const sidebar = [
 		slug: 'fluff-event-2026',
 	},
 	{
-		label: 'Fluff Event 2025',
-		slug: 'fluff-event-2025',
-	},
-	{
-		label: 'Fluff Event 2024',
-		slug: 'fluff-event-2024',
-	},
-	{
-		label: 'Fluff Event 2023',
-		slug: 'fluff-event-2023',
+		label: 'Événements précédents',
+		translations: {
+			en: 'Previous events',
+		},
+		items: [
+			{
+				label: 'Fluff Event 2025',
+				slug: 'fluff-event-2025',
+			},
+			{
+				label: 'Fluff Event 2024',
+				slug: 'fluff-event-2024',
+			},
+			{
+				label: 'Fluff Event 2023',
+				slug: 'fluff-event-2023',
+			},
+		],
 	},
 ]
 
