@@ -6,4 +6,8 @@
 	.icon-fw {
 		@apply w-5 text-center;
 	}
+
+	.text-muted {
+		@apply text-gray-500;
+	}
 }
