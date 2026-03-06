@@ -6,4 +6,4 @@ Le **Fluff Event 2026** est un événement caritatif organisé par l'association
 
 L'événement sera diffusé en direct sur Twitch par ses participants.
 
-_En attendant plus d'informations sur l'édition 2026 de l'événement, vous pouvez consulter les informations de la précédente édition ici : [Fluff Event 2025](../fluff-event-2025/)._
+<span class="text-muted">_En attendant plus d'informations sur l'édition 2026 de l'événement, vous pouvez consulter les informations de la précédente édition ici : [Fluff Event 2025](../fluff-event-2025/)._</span>
