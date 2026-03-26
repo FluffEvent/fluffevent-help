@@ -18,6 +18,20 @@ const sidebar = [
 		},
 		slug: 'fluff-event-2026/charity',
 	},
+	{
+		label: 'Sélection de l’association',
+		translations: {
+			en: 'Charity selection process',
+		},
+		slug: 'fluff-event-2026/charity/selection',
+	},
+	{
+		label: 'Modalités de vote des communautés',
+		translations: {
+			en: 'Communities voting process',
+		},
+		slug: 'fluff-event-2026/charity/voting',
+	}
 ]
 
 export default sidebar
