@@ -7,6 +7,24 @@ L'association soutenue par le Fluff Event 2026 est **l'association [Petits Princ
 La mission de Petits Princes est de réaliser les rêves d'enfants gravement malades pour leur offrir des moments de joie, de répit et d'évasion adaptés à leurs souhaits. L'association mobilise bénévoles, partenaires et dons pour concevoir et financer ces projets personnalisés, en privilégiant la transparence et l'accompagnement des familles.
 
 
+## Résultats du vote des communautés
+
+Cette année, six associations ont été sélectionnées pour être soumises au vote des communautés, qui a permis de déterminer l'association soutenue par le Fluff Event 2026. Voici les résultats du vote :
+
+| Classement | Association | Choix de la médiane |
+|:--:|--|:--:|
+| 1 | **Petits Princes** | **2.683** |
+| 2 | Imagine For Margo | 3.611 |
+| 3 | La chaîne de l'espoir | 3.733 |
+| 4 | Tout le monde contre le cancer | 4.097 |
+| 5 | Sourire à la vie | 4.313 |
+| 6 | Premiers de cordée | 5.545 |
+
+La méthode de vote utilisée pour ce classement est la **méthode de meilleure médiane**, qui classe les associations en fonction du choix médian exprimé par les votants. Concrètement, chaque votant a exprimé ses préférences en classant les associations du choix 1 (association préférée) au choix 6 (association la moins préférée).
+
+Pour en savoir plus sur la méthode de vote utilisée et la lecture de ce classement, n'hésitez pas à consulter la page dédiée.
+
+
 ## Processus de sélection
 
 Le processus de sélection des associations soutenues par le Fluff Event repose sur des valeurs fondamentales d'inclusion, d'éthique et de transparence. Voici les étapes suivies :
