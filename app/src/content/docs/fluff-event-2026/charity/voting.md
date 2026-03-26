@@ -1,3 +1,3 @@
 ---
-title: Processus de sélection de l'association soutenue
+title: Modalités de vote des communautés pour l'association soutenue
 ---

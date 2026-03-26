@@ -1,5 +1,5 @@
 ---
-title: Vote des communautés pour l'association soutenue
+title: Processus de sélection de l'association soutenue
 ---
 
 ## Processus de sélection
