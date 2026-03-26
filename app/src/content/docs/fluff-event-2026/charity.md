@@ -2,7 +2,9 @@
 title: Association soutenue en 2026
 ---
 
-L'association soutenue par le Fluff Event 2026 n'est pas encore officiellement annoncée.
+L'association soutenue par le Fluff Event 2026 est **l'association [Petits Princes](https://petitsprinces.com/)** !
+
+La mission de Petits Princes est de réaliser les rêves d'enfants gravement malades pour leur offrir des moments de joie, de répit et d'évasion adaptés à leurs souhaits. L'association mobilise bénévoles, partenaires et dons pour concevoir et financer ces projets personnalisés, en privilégiant la transparence et l'accompagnement des familles.
 
 
 ## Processus de sélection
