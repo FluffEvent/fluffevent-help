@@ -11,7 +11,7 @@ La mission de Petits Princes est de réaliser les rêves d'enfants gravement mal
 
 Cette année, six associations ont été sélectionnées pour être soumises au vote des communautés, qui a permis de déterminer l'association soutenue par le Fluff Event 2026. Voici les résultats du vote :
 
-| Classement | Association | Choix de la médiane |
+| Classement | Association | Choix médian |
 |:--:|--|:--:|
 | 1 | **Petits Princes** | **2.683** |
 | 2 | Imagine For Margo | 3.611 |
@@ -20,7 +20,7 @@ Cette année, six associations ont été sélectionnées pour être soumises au 
 | 5 | Sourire à la vie | 4.313 |
 | 6 | Premiers de cordée | 5.545 |
 
-La méthode de vote utilisée pour ce classement est la **méthode de meilleure médiane**, qui classe les associations en fonction du choix médian exprimé par les votants. Concrètement, chaque votant a exprimé ses préférences en classant les associations du choix 1 (association préférée) au choix 6 (association la moins préférée).
+La méthode de vote utilisée pour ce classement est la "**méthode de meilleure médiane**". Concrètement, chaque votant a exprimé ses préférences en classant les associations du choix 1 (association préférée) au choix 6 (association moins préférée). La méthode de vote classe les associations en fonction de la médiane de leurs choix.
 
 Pour en savoir plus sur la méthode de vote utilisée et la lecture de ce classement, n'hésitez pas à consulter la page dédiée.
 
