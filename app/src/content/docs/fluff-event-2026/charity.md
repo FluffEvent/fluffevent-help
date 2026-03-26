@@ -20,6 +20,8 @@ Cette année, six associations ont été sélectionnées pour être soumises au 
 | 5 | Sourire à la vie | 4.313 |
 | 6 | Premiers de cordée | 5.545 |
 
+Vous pouvez consulter le détail des résultats ici : [Votes Fluff Event 2026](https://votes.fluffevent.fr/2026/).
+
 La méthode de vote utilisée pour ce classement est la "**méthode de meilleure médiane**". Concrètement, chaque votant a exprimé ses préférences en classant les associations du choix 1 (association préférée) au choix 6 (association moins préférée). La méthode de vote classe les associations en fonction de la médiane de leurs choix.
 
 Pour en savoir plus sur la méthode de vote utilisée et la lecture de ce classement, n'hésitez pas à consulter la page dédiée.
