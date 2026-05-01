@@ -24,7 +24,7 @@ Vous pouvez consulter le détail des résultats ici : [Votes Fluff Event 2026](h
 
 La méthode de vote utilisée pour ce classement est la "**méthode de meilleure médiane**". Concrètement, chaque votant a exprimé ses préférences en classant les associations du choix 1 (association préférée) au choix 6 (association moins préférée). La méthode de vote classe les associations en fonction de la médiane de leurs choix.
 
-Pour en savoir plus sur la méthode de vote utilisée et la lecture de ce classement, veuillez consulter "[Vote des communautés pour l'association soutenue](./selection/)".
+Pour en savoir plus sur la méthode de vote utilisée et la lecture de ce classement, veuillez consulter "[Vote des communautés pour l'association soutenue](./voting/)".
 
 
 ## Processus de sélection des associations
@@ -38,4 +38,4 @@ Les étapes de ce processus sont :
 4. Sondage des participants
 5. Vote des communautés
 
-Pour en savoir plus sur ce processus de sélection, les critères d'évaluation utilisés pour le tri interne, veuillez consulter la page "[Processus de sélection de l'association soutenue](./vote/)".
+Pour en savoir plus sur ce processus de sélection, les critères d'évaluation utilisés pour le tri interne, veuillez consulter la page "[Processus de sélection de l'association soutenue](./selection/)".
