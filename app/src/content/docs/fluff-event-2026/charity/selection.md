@@ -1,9 +1,6 @@
 ---
-title: Association soutenue en 2026
+title: Processus de sélection de l'association soutenue
 ---
-
-L'association soutenue par le Fluff Event 2026 n'est pas encore officiellement annoncée.
-
 
 ## Processus de sélection
 
