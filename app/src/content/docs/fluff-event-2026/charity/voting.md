@@ -30,11 +30,11 @@ Pour chaque association, le choix médian va combiner deux valeurs :
 
 Détaillons le calcul pour obtenir le résultat de l'association B :
 - Les choix exprimés sont : 2, 2, 3, 1, 1, 2
-- On trie les choix et on les coupe en deux moitiés : 1, 1, 2 | 2, 2, 3
+- On trie les choix et on les coupe en deux moitiés : 1, 1, 2 ; 2, 2, 3
 - La valeur médiane est 2, arrondie au supérieur à 2
 - Dans l'ensemble, il y a 3 votes exprimant cette valeur médiane comme choix
 - Dans la première moitié, il y a 1 vote exprimant cette valeur médiane comme choix
-- On ajoute alors la proportion 1/3 = 0.33 à la valeur médiane
+- On ajoute alors la proportion 1 ÷ 3 = 0.33 à la valeur médiane
 - On obtient enfin un choix médian de 2.33 pour l'association B
 
 On peut appliquer le même raisonnement pour calculer le choix médian des autres associations.
@@ -44,35 +44,35 @@ On peut appliquer le même raisonnement pour calculer le choix médian des autre
 
 Pour l'association A :
 - Choix exprimés : 1, 1, 1, 2, 3, 4
-- Triés et coupés en deux : 1, 1, 1 | 2, 3, 4
+- Triés et coupés en deux : 1, 1, 1 ; 2, 3, 4
 - Valeur médiane : 1.5, arrondie au supérieur à 2
-- Proportion dans la première moitié : 0/1 = 0
+- Proportion dans la première moitié : 0 ÷ 1 = 0
 - Choix médian : 2.0
 
 Pour l'association B (rappel) :
 - Choix exprimés : 2, 2, 3, 1, 1, 2
-- Triés et coupés en deux : 1, 1, 2 | 2, 2, 3
+- Triés et coupés en deux : 1, 1, 2 ; 2, 2, 3
 - Valeur médiane : 2, arrondie au supérieur à 2
-- Proportion dans la première moitié : 1/3 = 0.33
+- Proportion dans la première moitié : 1 ÷ 3 = 0.33
 - Choix médian : 2.33
 
 Pour l'association C :
 - Choix exprimés : 3, 4, 2, 4, 2, 1
-- Triés et coupés en deux : 1, 2, 2 | 3, 4, 4
+- Triés et coupés en deux : 1, 2, 2 ; 3, 4, 4
 - Valeur médiane : 2.5, arrondie au supérieur à 3
-- Proportion dans la première moitié : 0/1 = 0
+- Proportion dans la première moitié : 0 ÷ 1 = 0
 - Choix médian : 3.0
 
 Pour l'association D :
 - Choix exprimés : 4, 3, 4, 3, 4, 3
-- Triés et coupés en deux : 3, 3, 3 | 4, 4, 4
+- Triés et coupés en deux : 3, 3, 3 ; 4, 4, 4
 - Valeur médiane : 3.5, arrondie au supérieur à 4
-- Proportion dans la première moitié : 0/3 = 0
+- Proportion dans la première moitié : 0 ÷ 3 = 0
 - Choix médian : 4.0
 
 Le raisonnement serait moins intuitif mais aussi valable en arrondissant la valeur médiane à l'inférieur, par exemple pour l'association D :
 - Valeur médiane : 3.5, arrondie à l'inférieur à 3
-- Proportion dans la première moitié : 3/3 = 1
+- Proportion dans la première moitié : 3 ÷ 3 = 1
 - Choix médian : 4.0
 
 </details>
@@ -92,6 +92,6 @@ Et l'association A serait ainsi celle généralement préférée et qui devrait 
 
 La méthode de meilleure médiane est utilisée pour le vote des communautés car elle permet à la fois de prendre en compte les préférences de tous les votants de manière équitable et d'exprimer l'ensemble des résultats en un classement simple à lire.
 
-Cette méthode de vote peut être plus initialement moins intuitive que d'autres et notre implémentation ne permet pas de classer deux associations ex-aequo, mais elle permet de mieux refléter les préférences collectives des communautés et d'éviter les biais liés à la polarisation des votes.
+Cette méthode de vote peut être plus initialement moins intuitive que d'autres et notre implémentation ne permet pas de classer deux associations ex-aequo, mais elle permet de refléter les préférences collectives des communautés en un seul vote et d'éviter les biais liés à la polarisation des votes.
 
 </details>
