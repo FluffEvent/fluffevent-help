@@ -21,16 +21,24 @@ const sidebar = [
 	{
 		label: 'Sélection de l’association',
 		translations: {
-			en: 'Charity selection process',
+			en: 'Charity selection',
 		},
-		slug: 'fluff-event-2026/charity/selection',
-	},
-	{
-		label: 'Modalités de vote des communautés',
-		translations: {
-			en: 'Communities voting process',
-		},
-		slug: 'fluff-event-2026/charity/voting',
+		items: [
+			{
+				label: 'Processus de sélection',
+				translations: {
+					en: 'Selection process',
+				},
+				slug: 'fluff-event-2026/charity/selection',
+			},
+			{
+				label: 'Modalités de vote des communautés',
+				translations: {
+					en: 'Communities voting process',
+				},
+				slug: 'fluff-event-2026/charity/voting',
+			},
+		],
 	}
 ]
 
