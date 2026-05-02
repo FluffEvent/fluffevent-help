@@ -95,3 +95,5 @@ La méthode de meilleure médiane est utilisée pour le vote des communautés ca
 Cette méthode de vote peut être plus initialement moins intuitive que d'autres et notre implémentation ne permet pas de classer deux associations ex-aequo, mais elle permet de refléter les préférences collectives des communautés en un seul vote et d'éviter les biais liés à la polarisation des votes.
 
 </details>
+
+Pour toute autre question ou problème sur lequel nous pouvons vous aider, n'hésitez pas à nous contacter par e-mail à [contact@fluffevent.fr](mailto:contact@fluffevent.fr), ou en ouvrant un ticket sur notre [Discord](https://discord.com/invite/rAesnJHuPe).
