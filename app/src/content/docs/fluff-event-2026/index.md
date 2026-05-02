@@ -2,7 +2,7 @@
 title: Fluff Event 2026
 ---
 
-Le **Fluff Event 2026** est un événement caritatif organisé par l'association Fluff Event, ayant pris lieu **du vendredi 30 mai 2025 à 18h00 au dimanche 1<sup>er</sup> juin 2025 à minuit**, soit 54 heures.
+Le **Fluff Event 2026** est un événement caritatif organisé par l'association Fluff Event, prévu **du vendredi 24 avril 2026 à 18h00 au dimanche 26 avril 2026 à minuit**, soit 54 heures.
 
 L'événement a été diffusé en direct sur Twitch par ses participants. Pour la première fois cette année, certains d'entre eux se sont retrouvés en présentiel pour animer l'événement !
 
