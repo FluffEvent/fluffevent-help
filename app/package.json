@@ -28,7 +28,7 @@
   "homepage": "https://github.com/FluffEvent/fluffevent-help#readme",
   "dependencies": {
     "@astrojs/check": "^0.9.10",
-    "@astrojs/starlight": "^0.40.0",
+    "@astrojs/starlight": "^0.41.7",
     "@astrojs/starlight-tailwind": "^5.0.0",
     "@iconify-json/arcticons": "^1.2.56",
     "@iconify-json/ic": "^1.2.4",
@@ -38,7 +38,7 @@
     "@iconify-json/twemoji": "^1.2.5",
     "@iconify/tailwind4": "^1.2.3",
     "@tailwindcss/vite": "^4.3.3",
-    "astro": "^6.4.8",
+    "astro": "^7.2.0",
     "sass": "^1.102.0",
     "tailwindcss": "^4.3.3",
     "yaml": "^2.9.0"
