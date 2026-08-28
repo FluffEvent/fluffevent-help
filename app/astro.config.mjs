@@ -29,6 +29,7 @@ export default defineConfig({
 					lang: 'en',
 				},
 			},
+
 			social: [
 				{ icon: 'twitter', label: 'Twitter', href: 'https://x.com/FluffEvent' },
 				{ icon: 'telegram', label: 'Telegram', href: 'https://t.me/FluffEventNews' },
@@ -37,6 +38,16 @@ export default defineConfig({
 			],
 			customCss: [
 				'./src/styles/global.css',
+			],
+			head: [
+				{
+					tag: 'script',
+					attrs: {
+						defer: true,
+						src: 'https://u.fluffevent.fr/tw.js',
+						'data-website-id': '7b281b7c-2b0e-4ebc-b104-f10d812cd680',
+					},
+				},
 			],
 			lastUpdated: true,
 			pagination: false,
